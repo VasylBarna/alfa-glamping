@@ -1,0 +1,33 @@
+.full_document {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media screen and (min-width: 360px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1720px;
+    }
+}
+
+@media screen and (max-width: $max-mobile) {
+    body.lock {
+        overflow: hidden;
+    }
+}
