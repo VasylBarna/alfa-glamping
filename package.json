@@ -32,7 +32,7 @@
     "webpack-stream": "^6.1.0"
   },
   "scripts": {
-    "deploy": "gulp build src/*.html && gh-pages -d build"
+    "deploy": "gulp build && gh-pages -d build"
   },
   "repository": {
     "type": "git",

@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <section class="hero container">
-  <div class="hero__content">
-    <svg><use></use></svg>
-    <div class="hero__box__title">
-      <h1 class="hero__title"></h1>
+  <a href="#" class="hero__link">
+    <img
+      class="hero__image"
+      src="../assets/images/Hero_mob.png"
+      alt="image alfa-gamping"
+    />
+  </a>
+
+  <div class="hero-overlay">
+    <svg class="hero-overlay__count">
+      <use href="../assets/images/symbol-defs.svg#icon-count"></use>
+    </svg>
+    <div class="hero-overlay__title">
+      <svg class="hero-overlay__title__spinner">
+        <use href="../assets/images/symbol-defs.svg#icon-spinner"></use>
+      </svg>
+      <h1 class="hero-overlay__title__text">explore the Mediterranean sea</h1>
     </div>
-    <div class="hero__text"></div>
-    <div class="hero__navigation">
-      <ul>
-        <li>
-          <div></div>
-          <a href="">
-            <button></button>
-          </a>
-        </li>
-        <li>
-          <div></div>
-          <a href="">
-            <button></button>
-          </a>
-        </li>
-      </ul>
+    <div class="hero-overlay__description">
+      We are inviting you to meet the amazing beach of Atlit. The place located
+      in the beuteful north of israel
+    </div>
+    <div class="hero-overlay__navigation">
+      <div class="hero-overlay__navigation__item">
+        <p class="hero-overlay__navigation__item__text">book now</p>
+        <a class="hero-overlay__navigation__item__link" href="">
+          <button class="hero-overlay__navigation__item__btn">
+            <div class="hero-overlay__navigation__buy buy--airbnb"></div>
+          </button>
+        </a>
+      </div>
+      <div class="hero-overlay__navigation__item">
+        <p class="hero-overlay__navigation__item__text">book now</p>
+        <a class="hero-overlay__navigation__item__link" href="">
+          <button class="hero-overlay__navigation__item__btn">
+            <div class="hero-overlay__navigation__buy buy--booking"></div>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 </section>
