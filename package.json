@@ -32,7 +32,7 @@
     "webpack-stream": "^6.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gulp build src/*.html && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/VasylBarna/alfa-glamping/issues"
   },
-  "homepage": "https://github.com/VasylBarna/alfa-glamping#readme",
+  "homepage": "https://VasylBarna.github.io/alfa-glamping",
   "dependencies": {
     "sass": "^1.53.0"
   }

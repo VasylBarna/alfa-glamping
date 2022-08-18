@@ -1,27 +1,27 @@
-'use strict'
+'use strict';
 
-const { src, dest } = require('gulp')
-const gulp = require('gulp')
-const autoprefixer = require('gulp-autoprefixer')
-const cssbeautify = require('gulp-cssbeautify')
-const removeComments = require('gulp-strip-css-comments')
-const rename = require('gulp-rename')
-const sass = require('gulp-sass')(require('sass'))
-const cssnano = require('gulp-cssnano')
-const uglify = require('gulp-uglify')
-const plumber = require('gulp-plumber')
-const panini = require('panini')
-const imagemin = require('gulp-imagemin')
-const del = require('del')
-const notify = require('gulp-notify')
-const webpack = require('webpack')
-const webpackStream = require('webpack-stream')
-const svgSprite = require('gulp-svg-sprite')
-const browserSync = require('browser-sync').create()
+const { src, dest } = require('gulp');
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const cssbeautify = require('gulp-cssbeautify');
+const removeComments = require('gulp-strip-css-comments');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass')(require('sass'));
+const cssnano = require('gulp-cssnano');
+const uglify = require('gulp-uglify');
+const plumber = require('gulp-plumber');
+const panini = require('panini');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const notify = require('gulp-notify');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const svgSprite = require('gulp-svg-sprite');
+const browserSync = require('browser-sync').create();
 
 /* Paths */
-const srcPath = 'src/'
-const distPath = 'dist/'
+const srcPath = 'src/';
+const distPath = 'dist/';
 
 const path = {
   build: {
@@ -53,7 +53,7 @@ const path = {
     fonts: srcPath + 'assets/fonts/**/*.{eot,woff,woff2,ttf,svg}',
   },
   clean: './' + distPath,
-}
+};
 
 /* Tasks */
 
@@ -62,11 +62,11 @@ function serve() {
     server: {
       baseDir: './' + distPath,
     },
-  })
+  });
 }
 
 function html(cb) {
-  panini.refresh()
+  panini.refresh();
   return src(path.src.html, { base: srcPath })
     .pipe(plumber())
     .pipe(
@@ -79,9 +79,9 @@ function html(cb) {
       }),
     )
     .pipe(dest(path.build.html))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function css(cb) {
@@ -92,8 +92,8 @@ function css(cb) {
           notify.onError({
             title: 'SCSS Error',
             message: 'Error: <%= error.message %>',
-          })(err)
-          this.emit('end')
+          })(err);
+          this.emit('end');
         },
       }),
     )
@@ -125,9 +125,9 @@ function css(cb) {
       }),
     )
     .pipe(dest(path.build.css))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function cssWatch(cb) {
@@ -138,8 +138,8 @@ function cssWatch(cb) {
           notify.onError({
             title: 'SCSS Error',
             message: 'Error: <%= error.message %>',
-          })(err)
-          this.emit('end')
+          })(err);
+          this.emit('end');
         },
       }),
     )
@@ -155,9 +155,9 @@ function cssWatch(cb) {
       }),
     )
     .pipe(dest(path.build.css))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function js(cb) {
@@ -168,8 +168,8 @@ function js(cb) {
           notify.onError({
             title: 'JS Error',
             message: 'Error: <%= error.message %>',
-          })(err)
-          this.emit('end')
+          })(err);
+          this.emit('end');
         },
       }),
     )
@@ -194,9 +194,9 @@ function js(cb) {
       }),
     )
     .pipe(dest(path.build.js))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function jsWatch(cb) {
@@ -207,8 +207,8 @@ function jsWatch(cb) {
           notify.onError({
             title: 'JS Error',
             message: 'Error: <%= error.message %>',
-          })(err)
-          this.emit('end')
+          })(err);
+          this.emit('end');
         },
       }),
     )
@@ -221,9 +221,9 @@ function jsWatch(cb) {
       }),
     )
     .pipe(dest(path.build.js))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function images(cb) {
@@ -239,55 +239,55 @@ function images(cb) {
       ]),
     )
     .pipe(dest(path.build.images))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function icon(cb) {
   return src(path.src.icon)
     .pipe(dest(path.build.icon))
-    .pipe(browserSync.reload({ stream: true }))
-  cb()
+    .pipe(browserSync.reload({ stream: true }));
+  cb();
 }
 
 function fonts(cb) {
   return src(path.src.fonts)
     .pipe(dest(path.build.fonts))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({ stream: true }));
 
-  cb()
+  cb();
 }
 
 function clean(cb) {
-  return del(path.clean)
+  return del(path.clean);
 
-  cb()
+  cb();
 }
 
 function watchFiles() {
-  gulp.watch([path.watch.html], html)
-  gulp.watch([path.watch.css], cssWatch)
-  gulp.watch([path.watch.js], jsWatch)
-  gulp.watch([path.watch.images], images)
-  gulp.watch([path.watch.icon], icon)
-  gulp.watch([path.watch.fonts], fonts)
+  gulp.watch([path.watch.html], html);
+  gulp.watch([path.watch.css], cssWatch);
+  gulp.watch([path.watch.js], jsWatch);
+  gulp.watch([path.watch.images], images);
+  gulp.watch([path.watch.icon], icon);
+  gulp.watch([path.watch.fonts], fonts);
 }
 
 const build = gulp.series(
   clean,
   gulp.parallel(html, css, js, images, icon, fonts),
-)
-const watch = gulp.parallel(build, watchFiles, serve)
+);
+const watch = gulp.parallel(build, watchFiles, serve);
 
 /* Exports Tasks */
-exports.html = html
-exports.css = css
-exports.js = js
-exports.images = images
-exports.icon = icon
-exports.fonts = fonts
-exports.clean = clean
-exports.build = build
-exports.watch = watch
-exports.default = watch
+exports.html = html;
+exports.css = css;
+exports.js = js;
+exports.images = images;
+exports.icon = icon;
+exports.fonts = fonts;
+exports.clean = clean;
+exports.build = build;
+exports.watch = watch;
+exports.default = watch;

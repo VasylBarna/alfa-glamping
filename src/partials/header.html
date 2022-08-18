@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <header class="header container">
   <div class="header__box">
-    <a href="./index.html" class="logo header__logo"
-      ><img
+    <div id="language" hidden>EN</div>
+    <a href="./index.html" class="header__logo" id="header__logo">
+      <img
+        class="header__logo--burger"
+        id="logo--burger"
+        src="/assets/images/burger-logo.png"
+        alt="logo"
+        hidden />
+      <img
         class="header__logo--small"
+        id="logo"
         src="/assets/images/logo.png"
         alt="logo" />
       <img
@@ -11,7 +19,7 @@
         src="/assets/images/big-logo.png"
         alt="logo"
     /></a>
-    <div class="header__burger">
+    <div class="header__burger" id="header__burger">
       <span></span>
     </div>
     <nav class="header__navigation">
@@ -47,16 +55,16 @@
         <div class="select__box">
           <p class="select__box__text">DISCOVER OUR PLACES</p>
           <button
+            id="select__box__btn"
             class="btn select__box__btn"
             type="button"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button
           >
             ATLIT BEACH
-            <svg class="item__icon icon-open">
+            <svg class="item__icon icon-open" id="icon-open">
               <use href="../assets/images/symbol-defs.svg#icon-open"></use>
-              <ul class="select__box__list">
+              <ul class="select__box__list" id="select__box__list">
                 <li class="select__box__list__item select--item--bg">
                   <a class="select__box__list__item__link" href="">Link</a>
                 </li>
@@ -74,7 +82,7 @@
           </button>
         </div>
       </div>
-      <ul class="header__navigation__list">
+      <ul class="header__navigation__list social--list">
         <li class="header__navigation__list__item">
           <a href="#" class="item__link"
             ><svg class="item__icon icon-instagram">

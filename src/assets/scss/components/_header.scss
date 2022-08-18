@@ -73,6 +73,17 @@
         }
     }
 
+    &__logo--burger  {
+        width: auto;
+        display: none;
+        position: relative;
+        z-index: 3;
+        @media screen and (min-width: $tablet) {
+                display: none;
+                transform: scale(0);
+        }
+    }
+
     &__burger {
         display: none;
 
@@ -133,13 +144,14 @@
 
     &__navigation {
         @media screen and (max-width: $max-mobile) {
-            padding: 70px 10px 30px 10px;
+            padding: 135px 10px 30px 10px;
             position: fixed;
             width: 100%;
             top: -1000%;
             left: 0;
             overflow: auto;
-            background: linear-gradient(323.19deg, rgb(255 83 18 / 32%), rgb(27 192 243 / 17%));
+            background-color: $background-body-color;
+            // background: linear-gradient(323.19deg, rgb(255 83 18 / 32%), rgb(27 192 243 / 17%));
             transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -229,6 +241,8 @@
             display: flex;
 
             @media screen and (max-width: $max-mobile) {
+                position: relative;
+                margin-bottom: 50px;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
@@ -280,7 +294,13 @@
                 &__list {
                     display: none;
                     position: absolute;
-                    top: 100%;
+                    top: 85%;
+                    padding: 0 10px;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-content: flex-start;
+                    align-items: flex-start;
                 }
 
                 &__list__item {
@@ -303,16 +323,35 @@
             }
         }
 
+        &__select::after {
+            @media screen and (max-width: $max-mobile) {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 100%;
+                left: 0;
+                bottom: -25px;
+                border-radius: 2px;
+                border-bottom: 1px solid $color-menu;
+            }
+
+        }
+
         &__language {
-            margin-left: 15px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.05em;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 1.12;
-            cursor: pointer;
+            @media screen and (max-width: $max-mobile) {
+                display: none;
+            }
+            @media screen and (min-width: $tablet) {
+                margin-left: 15px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.05em;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 1.12;
+                cursor: pointer;
+            }
         }
     }
 
@@ -335,6 +374,16 @@
 
     &__navigation.active {
         top: 0;
+    }
+
+    .social--list {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        align-content: center;
     }
 
     .item__icon {
@@ -362,19 +411,7 @@
         position: relative;
         width: 16px;
         height: 9px;
-        transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover, 
-        &:focus {
-        color: $text-color;
-        transform: rotate(180deg);
-        }
-    }
-
-    .icon-open:hover, :focus .select__box__list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
+        transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
     .icon-instagram:hover {
@@ -389,10 +426,30 @@
     .icon-youtube:hover {
         color: red;
     }
-    
+
     .icon-facebook:hover {
         color: rgb(0, 81, 255);
     }
+    #language {
+        @media screen and (max-width: $max-mobile) {
+        margin: 0;
+        display: none;
+        z-index: 1;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.12;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        }
+         @media screen and (min-width: $tablet) {
+            display: none;
+            transform: scale(0);
+         }
+    }
+
+    #select__box__btn:hover #icon-open {
+        color: $text-color;
+        transform: rotate(180deg);
+    }
 
 }
-

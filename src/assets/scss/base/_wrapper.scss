@@ -1,0 +1,13 @@
+.wrapper {
+  position: relative;
+    z-index: 0;
+
+  @media screen and (min-width: 360px) and (max-width: $max-mobile) {
+    background: linear-gradient(180deg, (rgba(227, 217, 207, 0), rgba(164, 124, 116, 1))) 0 80px no-repeat, 
+    url('../images/Hero.png') 50% 80px no-repeat, ;
+  }
+  @media screen and (min-width: $desktop) and (max-width: $max-desktop) {
+  background: linear-gradient(180deg, (rgba(227, 217, 207, 0), rgba(164, 124, 116, 1))) 0 100px no-repeat,
+  url('../images/Hero_desk.png') 50% 100px no-repeat, ;
+  }
+}
