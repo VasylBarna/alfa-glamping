@@ -1,9 +1,9 @@
-.main__overlay_project {
+.overlay-project {
+  width: 100%;
   position: relative;
   overflow: hidden;
-  display: table;
-  &:hover .main__overlay_text,
-  &:focus .main__overlay_text {
+  &:hover .hero-overlay,
+  &:focus .hero-overlay {
   transform: translateY(0%);
   }
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
@@ -12,34 +12,21 @@
   }
 }
 
-.main__overlay_text {
+.hero-overlay {
   position: absolute;
-  padding: 0 30px;
-  margin: 0;
-  width: 50%;
-  height: 50%;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  font-weight: $font-weight-bold;
-  line-height: 1.6;
+  // height: 50%;
+  top: 25%;
   overflow: hidden;
-  transform: translateX(-100%);
+  transform: translateX(-1000%);
   box-sizing: border-box;
-  color: $background-accent;
-  background-color: rgb(118 2 2 / 90%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (max-width: $max-mobile) {
-  padding: 10px 10px;
-  top: 46.7%;
-  
+  top: 55%;
+    // height: 100%;
   }
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  padding: 0 10px;
-  top: 46%;
+  top: 50%;
   width: 50%;
-  height: 54%;
+  height: 50%;
   }
 }

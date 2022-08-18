@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <section class="hero container">
-  <a href="#" class="hero__link">
-    <img
-      class="hero__image"
-      src="../assets/images/Hero_mob.png"
-      alt="image alfa-gamping"
-    />
-  </a>
-
-  <div class="hero-overlay">
-    <svg class="hero-overlay__count">
-      <use href="../assets/images/symbol-defs.svg#icon-count"></use>
-    </svg>
-    <div class="hero-overlay__title">
-      <svg class="hero-overlay__title__spinner">
-        <use href="../assets/images/symbol-defs.svg#icon-spinner"></use>
+  <div class="overlay-project">
+    <a href="#" class="hero__link">
+      <img
+        class="hero__image-mob"
+        src="../assets/images/Hero_mob.png"
+        alt="image alfa-gamping"
+      />
+      <img
+        class="hero__image-desk"
+        src="../assets/images/Hero_desk.png"
+        alt="image alfa-gamping"
+      />
+    </a>
+    <div class="hero-overlay">
+      <svg class="hero-overlay__count">
+        <use
+          class="count--mob"
+          href="../assets/images/symbol-defs.svg#icon-count-mob"
+        ></use>
+        <use
+          class="count--desk"
+          href="../assets/images/symbol-defs.svg#icon-count-desk"
+        ></use>
       </svg>
-      <h1 class="hero-overlay__title__text">explore the Mediterranean sea</h1>
-    </div>
-    <div class="hero-overlay__description">
-      We are inviting you to meet the amazing beach of Atlit. The place located
-      in the beuteful north of israel
-    </div>
-    <div class="hero-overlay__navigation">
-      <div class="hero-overlay__navigation__item">
-        <p class="hero-overlay__navigation__item__text">book now</p>
-        <a class="hero-overlay__navigation__item__link" href="">
-          <button class="hero-overlay__navigation__item__btn">
-            <div class="hero-overlay__navigation__buy buy--airbnb"></div>
-          </button>
-        </a>
+      <p class="hero-overlay__count__text">01</p>
+      <div class="hero-overlay__title">
+        <svg class="hero-overlay__title__spinner">
+          <use
+            class="spinner--mob"
+            href="../assets/images/symbol-defs.svg#icon-spinner-mob"
+          ></use>
+          <use
+            class="spinner--desk"
+            href="../assets/images/symbol-defs.svg#icon-spinner-desk"
+          ></use>
+        </svg>
+        <h1 class="hero-overlay__title__text">explore the Mediterranean sea</h1>
       </div>
-      <div class="hero-overlay__navigation__item">
-        <p class="hero-overlay__navigation__item__text">book now</p>
-        <a class="hero-overlay__navigation__item__link" href="">
-          <button class="hero-overlay__navigation__item__btn">
-            <div class="hero-overlay__navigation__buy buy--booking"></div>
-          </button>
-        </a>
+      <div class="hero-overlay__description">
+        We are inviting you to meet the amazing beach of Atlit. The place
+        located in the beuteful north of israel
+      </div>
+      <div class="hero-overlay__navigation">
+        <div class="hero-overlay__navigation__item">
+          <p class="hero-overlay__navigation__item__text">book now</p>
+          <a class="hero-overlay__navigation__item__link" href="">
+            <button class="hero-overlay__navigation__item__btn">
+              <div class="hero-overlay__navigation__buy buy--airbnb"></div>
+            </button>
+          </a>
+        </div>
+        <div class="hero-overlay__navigation__item">
+          <p class="hero-overlay__navigation__item__text">book now</p>
+          <a class="hero-overlay__navigation__item__link" href="">
+            <button class="hero-overlay__navigation__item__btn">
+              <div class="hero-overlay__navigation__buy buy--booking"></div>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
