@@ -1169,7 +1169,7 @@ img {
 
 @media screen and (min-width: 1200px) {
     .hero-overlay__navigation .buy--booking {
-        background: url("./images/booking-desk.png") 50% 50% no-repeat;
+        background: url("./../images/booking-desk.png") 50% 50% no-repeat;
     }
 }
 
