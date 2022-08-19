@@ -1154,22 +1154,22 @@ img {
 }
 
 .hero-overlay__navigation .buy--airbnb {
-    background: url("../images/airbnb-mob.png") 50% 50% no-repeat;
+    background: url("./images/airbnb-mob.png") 50% 50% no-repeat;
 }
 
 @media screen and (min-width: 1200px) {
     .hero-overlay__navigation .buy--airbnb {
-        background: url("../images/airbnb-desk.png") 50% 50% no-repeat;
+        background: url("./images/airbnb-desk.png") 50% 50% no-repeat;
     }
 }
 
 .hero-overlay__navigation .buy--booking {
-    background: url("../images/booking-mob.png") 50% 50% no-repeat;
+    background: url("./images/booking-mob.png") 50% 50% no-repeat;
 }
 
 @media screen and (min-width: 1200px) {
     .hero-overlay__navigation .buy--booking {
-        background: url("../images/booking-desk.png") 50% 50% no-repeat;
+        background: url("./images/booking-desk.png") 50% 50% no-repeat;
     }
 }
 
