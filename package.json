@@ -32,7 +32,7 @@
     "webpack-stream": "^6.1.0"
   },
   "scripts": {
-    "deploy": "gulp build && gh-pages -d build"
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -46,6 +46,8 @@
   },
   "homepage": "https://VasylBarna.github.io/alfa-glamping",
   "dependencies": {
+    "gh-pages": "^4.0.0",
+    "jquery": "^3.6.0",
     "sass": "^1.53.0"
   }
 }

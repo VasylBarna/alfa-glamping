@@ -36,6 +36,7 @@
     @media screen and (min-width: $desktop) {
       display: block;
       width: 1200px;
+      // width: 400px;
       margin-right: auto;
       margin-left: auto;      
     }
@@ -253,16 +254,16 @@
     }
     
     .buy--airbnb {
-       background: url('/assets/images/airbnb-mob.png') 50% 50% no-repeat;
+       background: url('./../images/airbnb-mob.png') 50% 50% no-repeat;
         @media screen and (min-width: $desktop) {
-          background: url('/assets/images/airbnb-desk.png') 50% 50% no-repeat;
+          background: url('./../images/airbnb-desk.png') 50% 50% no-repeat;
         }
     }
     
     .buy--booking {
-      background: url('/assets/images/booking-mob.png') 50% 50% no-repeat;
+      background: url('./../images/booking-mob.png') 50% 50% no-repeat;
         @media screen and (min-width: $desktop) {
-          background: url('/assets/images/booking-desk.png') 50% 50% no-repeat;
+          background: url('./../images/booking-desk.png') 50% 50% no-repeat;
         }
     }
   }

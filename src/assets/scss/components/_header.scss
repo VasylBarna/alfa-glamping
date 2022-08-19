@@ -63,12 +63,16 @@
 
     &__logo--big {
         display: none;
+        width: 122px;
+        height: 182px;
+        fill: currentColor;
+        color: $color-menu;
+        border-radius: 57.5px;
         @media screen and (min-width: $tablet) {
             display: block;
             position: absolute;
             left: -20%;
             top: 30%;
-            width: auto;
         }
         @media screen and (min-width: $desktop) {
             left: -20%;
