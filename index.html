@@ -26,6 +26,11 @@
   <body class="full_document">
     <div class="wrapper"><!DOCTYPE html>
 <header class="header container">
+  <a href="./index.html" class="header__logo">
+    <svg class="header__logo--big" alt="logo">
+      <use href="./assets/images/symbol-defs.svg#logo-big"></use>
+    </svg>
+  </a>
   <div class="header__box">
     <div id="language" hidden>EN</div>
     <a href="./index.html" class="header__logo" id="header__logo">
@@ -34,17 +39,15 @@
         id="logo--burger"
         src="./assets/images/burger-logo.png"
         alt="logo"
-        hidden />
+        hidden
+      />
       <img
         class="header__logo--small"
         id="logo"
         src="./assets/images/logo.png"
-        alt="logo" />
-      <img
-        class="header__logo--big"
-        src="./assets/images/big-logo.png"
         alt="logo"
-    /></a>
+      />
+    </a>
     <div class="header__burger" id="header__burger">
       <span></span>
     </div>
@@ -148,6 +151,12 @@
 </header>
  <!DOCTYPE html>
 <section class="hero container">
+  <a class="hero__move" href="">
+    <p class="hero__move__text">GLAMPING EXPERIENCE</p>
+    <svg class="hero__move__icon">
+      <use href="./assets/images/symbol-defs.svg#icon-move"></use>
+    </svg>
+  </a>
   <div class="overlay-project">
     <a href="#" class="hero__link">
       <img
@@ -155,11 +164,22 @@
         src="./assets/images/Hero_mob.png"
         alt="image alfa-gamping"
       />
-      <img
-        class="hero__image-desk"
-        src="./assets/images/Hero_desk.png"
-        alt="image alfa-gamping"
-      />
+      <div class="slider">
+        <div class="slider_item">
+          <img
+            class="hero__image-desk"
+            src="./assets/images/Hero_desk.png"
+            alt="image alfa-gamping"
+          />
+        </div>
+        <!-- <div class="slider_item">
+          <img
+            class="hero__image-desk"
+            src="./assets/images/Hero_desk.png"
+            alt="image alfa-gamping"
+          />
+        </div> -->
+      </div>
     </a>
     <div class="hero-overlay">
       <svg class="hero-overlay__count">
@@ -216,5 +236,6 @@
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="../../slick.js"></script>
   </body>
 </html>
