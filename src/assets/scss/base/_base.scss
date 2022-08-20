@@ -1,29 +1,32 @@
 .full_document {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1920px;
+    // margin-left: auto;
+    // margin-right: auto;
+    max-width: 1900px;
+
+    width: 100%;
+    height: 100%;
     font-family: font-family-body;
     color: $text-color;
     background-color: $background-body-color;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    // margin-right: auto;
+    // margin-left: auto;
 
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+        // width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        // width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        // width: 1200px;
     }
 }
 
