@@ -7,29 +7,83 @@
     </svg>
   </a>
   <div class="overlay-project">
-    <a href="#" class="hero__link">
-      <img
+    <!-- <a href="#" class="hero__link"> -->
+    <!-- <img
         class="hero__image-mob"
         src="./assets/images/Hero_mob.png"
         alt="image alfa-gamping"
-      />
-      <div class="slider">
-        <div class="slider_item">
-          <img
-            class="hero__image-desk"
-            src="./assets/images/Hero_desk.png"
-            alt="image alfa-gamping"
-          />
+      /> -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="image-slider__slide swiper-slide"
+            data-title="Atlit Beach"
+            data-hash="Atlit Beach"
+          >
+            <div class="image-slider__image hero__link swiper-zoom-container">
+              <img
+                class="hero__image-desk"
+                src="./assets/images/Hero_desk.png"
+                alt="image alfa-gamping"
+              />
+            </div>
+          </div>
+          <div
+            class="image-slider__slide swiper-slide"
+            data-title="Another place"
+            data-hash="Another placeh"
+          >
+            <div class="image-slider__image hero__link">
+              <img
+                class="hero__image-desk"
+                src="./assets/images/slide.png"
+                alt="image alfa-gamping"
+                data-swiper-autoplay="2000"
+              />
+            </div>
+          </div>
+          <div
+            class="image-slider__slide swiper-slide"
+            data-title="Another place"
+            data-hash="Another place"
+          >
+            <div class="image-slider__image hero__link">
+              <img
+                class="hero__image-desk"
+                src="./assets/images/slide2.png"
+                alt="image alfa-gamping"
+              />
+            </div>
+          </div>
+          <div
+            class="image-slider__slide swiper-slide"
+            data-title="Another place"
+            data-hash="Another place"
+          >
+            <div class="image-slider__image hero__link">
+              <img
+                class="hero__image-desk"
+                src="./assets/images/slide1.png"
+                alt="image alfa-gamping"
+              />
+            </div>
+          </div>
         </div>
-        <!-- <div class="slider_item">
-          <img
-            class="hero__image-desk"
-            src="./assets/images/Hero_desk.png"
-            alt="image alfa-gamping"
-          />
-        </div> -->
       </div>
-    </a>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+    </div>
+    <!-- </a> -->
     <div class="hero-overlay">
       <svg class="hero-overlay__count">
         <use
@@ -41,7 +95,8 @@
           href="./assets/images/symbol-defs.svg#icon-count-desk"
         ></use>
       </svg>
-      <p class="hero-overlay__count__text">01</p>
+      <!-- <span class="hero-overlay__count__total">1</span> -->
+      <span class="hero-overlay__count__current">1</span>
       <div class="hero-overlay__title">
         <svg class="hero-overlay__title__spinner">
           <use

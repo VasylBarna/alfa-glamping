@@ -1,5 +1,6 @@
 .overlay-project {
  width: 100%;
+
   position: relative;
   overflow: hidden;
   &:hover .hero-overlay,
@@ -16,7 +17,9 @@
 }
 
 .hero-overlay {
+  // display: none;
     position: absolute;
+    z-index: 3;
     overflow: hidden;
     transform: translateX(-1000%);
     box-sizing: border-box;
@@ -30,6 +33,7 @@
     width: 50%;
   }
   @media screen and (min-width: $desktop) { 
-    top: 25%;
+    // top: 25%;
+    top: 215px;
   }
 }

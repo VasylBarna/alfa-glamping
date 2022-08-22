@@ -1,7 +1,9 @@
 .hero {
   position: relative;
-  padding-top: 54px;
   width: 100%;
+    @media screen and (max-width: $max-mobile) {
+      padding-top: 54px;
+    }
 
     &__move {
       @media screen and (max-width: $max-mobile) { 
@@ -47,6 +49,7 @@
 
   &__link {
     width: 100%;
+    // height: 100%;
     display: inline-block;
     position: relative;
     line-height: 0;
@@ -72,12 +75,16 @@
 
   &__image-mob {
     display: none;
+    // width: auto;
+      // height: auto;
     @media screen and (max-width: $max-mobile) {
       display: block;
     }
   }
   &__image-desk {
     display: none;
+    // width: auto;
+    //   height: auto;
     @media screen and (min-width: $desktop) {
       display: block;  
     }
@@ -114,19 +121,33 @@
       height: 59px;
     }
 
-    &__text {
+    &__current {
       display: none;
-        @media screen and (min-width: $desktop) {
-          display: block;
-          position: absolute;
-          left: 90.5%;
-          top: 7%;
-          font-weight: 400;
-          font-size: 36px;
-          line-height: 1.22;
-          color: $background-body-color;
-       }
-     }
+      @media screen and (min-width: $desktop) {
+        display: block;
+        position: absolute;
+        left: 93.2%;
+        top: 6%;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.22;
+        color: $background-body-color;
+         }
+      }
+                //  &__total {
+                //    display: none;
+        
+                //    @media screen and (min-width: $desktop) {
+                //      display: block;
+                //      position: absolute;
+                //      left: 90.5%;
+                //      top: 7%;
+                //      font-weight: 400;
+                //      font-size: 36px;
+                //      line-height: 1.22;
+                //      color: $background-body-color;
+                //    }
+                //  }
   }
 
     .count--mob {

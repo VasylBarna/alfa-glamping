@@ -32,7 +32,7 @@
     "webpack-stream": "^6.1.0"
   },
   "scripts": {
-    "deploy": "gulp build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
   "dependencies": {
     "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "swiper": "^8.3.2"
   }
 }
