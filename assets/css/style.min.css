@@ -983,10 +983,6 @@ button.swiper-pagination-bullet {
   height: 38.91px;
 }
 
-.image-slider {
-  padding: 0 0 70px 0;
-}
-
 .image-slider__image {
   text-align: center;
 }
@@ -1535,6 +1531,7 @@ button.swiper-pagination-bullet {
 .hero {
   position: relative;
   width: 100%;
+  padding-bottom: 1%;
 }
 @media screen and (max-width: 767px) {
   .hero {
@@ -1745,7 +1742,7 @@ button.swiper-pagination-bullet {
     line-height: 1.1;
   }
 }
-.hero-overlay__description {
+.hero-overlay__sub-title {
   margin-bottom: 24px;
   font-weight: 300;
   font-size: 17px;
@@ -1870,4 +1867,189 @@ button.swiper-pagination-bullet {
   .hero-overlay {
     top: 215px;
   }
+}
+
+.about {
+  padding-bottom: 103px;
+}
+.about__wrapper {
+  position: relative;
+}
+.about__wrapper__image {
+  position: absolute;
+  width: auto;
+}
+.about__wrapper .image--big {
+  top: 315px;
+  left: 800px;
+}
+.about__wrapper .image--small {
+  top: 485px;
+  left: 433px;
+}
+.about__wrapper__title {
+  margin-bottom: 3%;
+  font-family: "Bebas Neue", cursive, sans-serif;
+  font-weight: 400;
+  font-size: 99.36px;
+  line-height: 1.107;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.about__wrapper__title__sub-title {
+  margin-top: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 41.5928px;
+  line-height: 1.105;
+  letter-spacing: 0.05em;
+}
+.about__wrapper__list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.about__wrapper__list__item {
+  position: relative;
+}
+.about__wrapper__list__item:not(:last-child) {
+  margin-right: 3%;
+}
+.about__wrapper__list .item__link {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.125;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #747474;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__wrapper__list .item__link:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+.about__wrapper__list .link__current {
+  color: #000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__wrapper__list .link__current::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -19px;
+  border-radius: 2px;
+  border-bottom: 4px solid #DCC9C0;
+}
+@media screen and (max-width: 767px) {
+  .about__wrapper__list .link__current::after {
+    bottom: -5px;
+  }
+}
+.about__wrapper__list::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 60%;
+  bottom: -20px;
+  border-radius: 2px;
+  border-bottom: 1px solid #DCC9C0;
+}
+.about__sub-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about__sub-list__sub-item {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.about__sub-list__sub-item__vector {
+  position: relative;
+}
+.about__sub-list__sub-item__image {
+  margin-right: 7px;
+  width: auto;
+}
+.about__sub-list__sub-item .image--revert {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.about__sub-list__sub-item__text {
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22.0357px;
+  line-height: 1.134;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #0A2936;
+  cursor: pointer;
+}
+.about__sub-list__sub-item__text:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+.about__sub-list__sub-item .sub-item__wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__sub-list__sub-item .wrapper--caravan {
+  top: 10px;
+}
+.about__sub-list__sub-item .wrapper--cheel {
+  top: 10px;
+}
+.about__sub-list__sub-item .wrapper--vr {
+  top: 40px;
+}
+.about__sub-list .item--caravan {
+  bottom: -215px;
+  left: -406px;
+}
+.about__sub-list .item--chanel-zone {
+  bottom: -299px;
+  left: -406px;
+}
+.about__sub-list .item--vr-zone {
+  bottom: -520px;
+  left: -406px;
+}
+.about__sub-list .item--games {
+  bottom: -215px;
+  right: -1312px;
+  flex-direction: row-reverse;
+}
+.about__sub-list .item--children {
+  bottom: -299px;
+  right: -1312px;
+  flex-direction: row-reverse;
+}
+.about__sub-list .item--yoga {
+  bottom: -520px;
+  right: -1312px;
+  flex-direction: row-reverse;
 }
