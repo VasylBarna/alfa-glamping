@@ -79,12 +79,17 @@ $(document).ready(function () {
     //   modifier: 1,
     // },
 
-    effect: 'cube',
-    cubeEffect: {
-      slideShadows: false,
-      shadow: true,
-      shadowOffset: 40,
-      shadowScale: 0.94,
+    // effect: 'cube',
+    // cubeEffect: {
+    //   slideShadows: false,
+    //   shadow: true,
+    //   shadowOffset: 40,
+    //   shadowScale: 0.94,
+    // },
+
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
     },
 
     // effect: 'slide',
@@ -111,7 +116,7 @@ $(document).ready(function () {
     // breakpointsBase: 'container',
     grabCursor: true,
     // бесконечний слайдер
-    // loop: true,
+    loop: true,
     // кол-во дублирующих слайдов
     loopedSlides: 0,
     // Вкл / отк. перетаскивания на пк
@@ -155,14 +160,14 @@ $(document).ready(function () {
     // freeMode: true,
 
     // автопрокрутка
-    autoplay: {
-      // пауза между прокруткою
-      delay: 6000,
-      // закончить на последнем слайде
-      stopOnLastSlide: true,
-      // отключить послу ручного переключения
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   // пауза между прокруткою
+    //   delay: 6000,
+    //   // закончить на последнем слайде
+    //   stopOnLastSlide: true,
+    //   // отключить послу ручного переключения
+    //   disableOnInteraction: false,
+    // },
 
     // скорость переключение слайдо
     speed: 800,
@@ -187,6 +192,7 @@ $(document).ready(function () {
     //  отключить предзагрузку картинок
     // updateOnImagesReady: true,
 
+    lazy: false,
     // preloadImages: false,
     // // lazy-loading
     // lazy: {
