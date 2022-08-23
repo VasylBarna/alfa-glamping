@@ -2052,26 +2052,12 @@ button.swiper-pagination-bullet {
 }
 
 .about {
-    padding-bottom: 103px;
+    width: 100%;
+    padding-bottom: 4.4%;
 }
 
 .about__wrapper {
     position: relative;
-}
-
-.about__wrapper__image {
-    position: absolute;
-    width: auto;
-}
-
-.about__wrapper .image--big {
-    top: 315px;
-    left: 800px;
-}
-
-.about__wrapper .image--small {
-    top: 485px;
-    left: 433px;
 }
 
 .about__wrapper__title {
@@ -2099,27 +2085,24 @@ button.swiper-pagination-bullet {
     letter-spacing: 0.05em;
 }
 
-.about__wrapper__list {
+.about__wrapper__title__list {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 70%;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
-.about__wrapper__list__item {
+.about__wrapper__title__list__item {
     position: relative;
 }
 
-.about__wrapper__list__item:not(:last-child) {
+.about__wrapper__title__list__item:not(:last-child) {
     margin-right: 3%;
 }
 
-.about__wrapper__list .item__link {
-    position: relative;
+.about__wrapper__title__list .item__link {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -2131,17 +2114,17 @@ button.swiper-pagination-bullet {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__wrapper__list .item__link:hover {
+.about__wrapper__title__list .item__link:hover {
     transform: scale(1.1);
     color: #000;
 }
 
-.about__wrapper__list .link__current {
+.about__wrapper__title__list .link__current {
     color: #000;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__wrapper__list .link__current::after {
+.about__wrapper__title__list .link__current::after {
     display: block;
     position: absolute;
     content: "";
@@ -2153,51 +2136,83 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 767px) {
-    .about__wrapper__list .link__current::after {
+    .about__wrapper__title__list .link__current::after {
         bottom: -5px;
     }
 }
 
-.about__wrapper__list::after {
+.about__wrapper__title__list::after {
     display: block;
     position: absolute;
     content: "";
-    width: 60%;
+    width: -webkit-fill-available;
     bottom: -20px;
     border-radius: 2px;
-    border-bottom: 1px solid #DCC9C0;
+    border-bottom: 1px solid #dcc9c0;
+    text-align: center;
 }
 
-.about__sub-list {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.about__sub-list__sub-item {
-    position: absolute;
+.couple {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 176px);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.about__sub-list__sub-item__vector {
+.couple__image {
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
 }
 
-.about__sub-list__sub-item__image {
+.couple__image__big {
+    position: absolute;
+    z-index: 2;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 1740px) {
+    .couple__image__big {
+        margin-left: 21%;
+        top: -11%;
+        left: 13%;
+        width: auto;
+    }
+}
+
+.couple__image__small {
+    z-index: 2;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 1740px) {
+    .couple__image__small {
+        margin-left: -4.5%;
+        width: auto;
+    }
+}
+
+.couple__wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.couple__wrapper__image {
     margin-right: 7px;
     width: auto;
 }
 
-.about__sub-list__sub-item .image--revert {
-    margin-right: 0;
-    margin-left: 7px;
-}
-
-.about__sub-list__sub-item__text {
+.couple__wrapper__text {
     padding: 5px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -2211,59 +2226,196 @@ button.swiper-pagination-bullet {
     cursor: pointer;
 }
 
-.about__sub-list__sub-item__text:hover {
+.couple__wrapper__text:hover {
     transform: scale(1.1);
     color: #000;
 }
 
-.about__sub-list__sub-item .sub-item__wrapper {
-    position: absolute;
+.couple__left-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.couple__left-list__item {
+    position: relative;
+}
+
+.couple__left-list__item__vector {
+    width: auto;
+}
+
+.couple__right-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.couple__right-list__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.couple .image--revert {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.couple .wrapper--caravan {
+    top: 10%;
+}
+
+.couple .wrapper--vr {
+    top: 40%;
+}
+
+.item--primary {
+    margin-bottom: 22%;
+}
+
+.item--primary-revert {
+    margin-bottom: 26%;
+}
+
+.item--secondary {
+    margin-bottom: 30%;
+}
+
+.item--secondary--secondary {
+    margin-bottom: 31%;
+}
+
+.picture {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.picture__image {
+    max-width: 100%;
+    cursor: pointer;
+    transition: 1200ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.picture__wrapper {
+    display: flex;
+}
+
+.picture__wrapper__primary .picture__image:hover {
+    opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px #C4C4C4;
+  /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(1.2);
+}
+
+.picture__wrapper__secondary .picture__image:hover {
+    opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px #C4C4C4;
+  /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(1.5);
+}
+
+.picture__wrapper__tertiary .picture__image:hover {
+    opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px #C4C4C4;
+  /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-600px) scale(2);
+}
+
+.places {
+    padding-bottom: 15px;
+    width: calc(100% - 180px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.places__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.places__wrapper__title {
+    width: calc(100% - 1293px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.places__wrapper__title__name {
+    margin-bottom: 8px;
+    font-family: "Bebas Neue", cursive, sans-serif;
+    font-weight: 400;
+    font-size: 99.3641px;
+    line-height: 1.04;
+    display: flex;
     align-items: center;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #0A2936;
 }
 
-.about__sub-list__sub-item .wrapper--caravan {
-    top: 10px;
+.places__wrapper__title__description {
+    margin-bottom: 168px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 41.5928px;
+    line-height: 1.105;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0A2936;
 }
 
-.about__sub-list__sub-item .wrapper--cheel {
-    top: 10px;
+.places__wrapper__title__btn {
+    margin-left: 163px;
+    padding: 15px 52px;
+    width: 183px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F0553B;
+    border: none;
 }
 
-.about__sub-list__sub-item .wrapper--vr {
-    top: 40px;
+.places__wrapper__title__btn:hover {
+    transform: scale(1.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__sub-list .item--caravan {
-    bottom: -215px;
-    left: -406px;
+.places__wrapper__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-.about__sub-list .item--chanel-zone {
-    bottom: -299px;
-    left: -406px;
+.places__wrapper__gallery .places__image {
+    max-width: 100%;
+    cursor: pointer;
+    transition: 1200ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about__sub-list .item--vr-zone {
-    bottom: -520px;
-    left: -406px;
-}
-
-.about__sub-list .item--games {
-    bottom: -215px;
-    right: -1312px;
-    flex-direction: row-reverse;
-}
-
-.about__sub-list .item--children {
-    bottom: -299px;
-    right: -1312px;
-    flex-direction: row-reverse;
-}
-
-.about__sub-list .item--yoga {
-    bottom: -520px;
-    right: -1312px;
-    flex-direction: row-reverse;
+.places__wrapper__gallery .places__image:hover {
+    opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px #C4C4C4;
+  /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(1.2);
 }
