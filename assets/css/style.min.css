@@ -2478,7 +2478,6 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 1.11;
   display: flex;
-  align-items: flex-end;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
