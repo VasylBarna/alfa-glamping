@@ -1,0 +1,99 @@
+.places {
+  padding-bottom: 15px;
+  width: calc(100% - 180px);
+  margin-right: auto;
+  margin-left: auto;
+
+  &__wrapper {
+        display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+
+    &__title {
+          width: calc(100% - 1293px);
+          display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            justify-content: center;
+            align-items: flex-start;
+
+      &__name {
+        margin-bottom: 8px;
+        font-family: $font-family-title;
+          font-weight: $font-weight-body;
+          font-size: 99.3641px;
+          line-height: 1.04;  
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.035em;
+          text-transform: uppercase;       
+          color: $text-color;
+
+        }
+
+        &__description {
+          margin-bottom: 168px;
+          font-family: $font-family-body;
+            font-weight: 500;
+            font-size: 41.5928px;
+            line-height: 1.105;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $text-color;
+        }
+
+        &__btn {
+          margin-left: 163px;
+          padding: 15px 52px;
+           width: 183px;
+          font-family: $font-family-body;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.035em;
+            text-transform: uppercase;         
+            color: $color-btn;
+            background: $background-btn;
+            border: none;
+
+            &:hover {
+              transform: scale(1.1);
+              transition: $transition-timing-function;
+            }
+        }
+
+    }
+
+    &__gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: space-around;
+      align-items: stretch;
+
+          .places__image {
+              max-width: 100%;
+              cursor: pointer;
+              transition: 1200ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          
+              &:hover {
+                opacity: 1;
+                /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+                box-shadow: 0 0 25px 25px $background-hero;
+                /*pushing the shadow down and scaling it down to size*/
+                transform: rotateX(0) translateZ(-60px) scale(1.2);
+               }
+            }
+    }
+  }
+}
