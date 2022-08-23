@@ -1,5 +1,5 @@
 .places {
-  padding-bottom: 15px;
+  padding-bottom: 63px;
   width: calc(100% - 180px);
   margin-right: auto;
   margin-left: auto;
@@ -64,10 +64,11 @@
             color: $color-btn;
             background: $background-btn;
             border: none;
+            transition: $transition-timing-function;
 
             &:hover {
               transform: scale(1.1);
-              transition: $transition-timing-function;
+              
             }
         }
 

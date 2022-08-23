@@ -1,0 +1,169 @@
+.review {
+  position: relative;
+  padding-bottom: 100px;
+  width: calc(100% - 180px);
+  margin-right: auto;
+  margin-left: auto;
+
+  &__wrapper {
+    display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: space-between;
+      justify-content: space-between;
+      align-items: stretch;
+
+
+      &__cap {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        left: 36%;
+        font-family: $font-family-title;
+        font-weight: $font-weight-body;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.035em;
+        text-transform: uppercase;
+
+        &__primary {
+          font-size: 240px;
+          line-height: 1.112;
+          text-align: center;
+          color: transparent;
+          -webkit-text-stroke: 1.89px #FFDE3A;
+          text-shadow: none;
+          z-index: 1;
+        }
+
+        &__secondary {
+            position: absolute;
+            left: 20.5%;
+            top: 25%;
+            width: 39%;
+            font-size: 99.3641px;
+            line-height: 1.046;
+            text-align: right;
+            color: #0A2936;
+            z-index: 2;
+        }
+
+       }
+    }
+    
+    &__people {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+
+      &__image {
+        margin-right: auto;
+        padding-top: 4.7%;
+
+        .image-hero {
+          width: auto;
+        }
+      }
+
+      &__box {
+          padding-top: 17.5%;
+                display: flex;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  align-items: stretch;
+                  justify-content: space-between;
+                  align-content: space-between;
+
+          .content {
+            margin-left: 6.4%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+
+            &__title {
+              width: calc(100% - 51%);
+              font-size: 24px;
+              font-family: $font-family-body;
+              line-height: 1.125;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              letter-spacing: 0.05em;;
+
+              &__box {
+                margin-bottom: 22px;
+                display: flex;
+              }
+
+                &__index {
+                  margin-right: 19px;
+                  font-weight: $font-weight-bold;
+                  display: flex;
+                  align-items: center;
+                  letter-spacing: 0.05em;
+                  text-transform: uppercase;
+                  color: #FFDE3A;
+
+               }
+
+                &__name {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    }
+
+                &__text {
+                  font-family: $font-family-body;;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 1.227;
+                    letter-spacing: 0.035em;
+                }
+            }
+
+            &__navigation {
+                  display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
+
+                    &__toggle {
+                    display: flex;
+                    align-items: flex-start;
+                    padding-top: 45%;
+
+                    .navigation--vector-right {
+                      margin-left: 30px;
+                    } 
+                  }
+
+                  &__social {
+                    font-family: $font-family-body;
+                      font-weight: 500;
+                      font-size: 15px;
+                      line-height: 1.2;
+                      display: flex;
+                      align-items: center;
+                      text-align: center;
+                      letter-spacing: 0.035em;
+                      text-transform: uppercase;
+                      color: $background-btn;
+                  }
+             }
+          }
+      }
+
+      .review__people__box__image {
+        display: flex;
+      }
+
+
+      
+    }
+}
