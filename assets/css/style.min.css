@@ -2519,3 +2519,15 @@ button.swiper-pagination-bullet {
   bottom: 0;
   position: absolute;
 }
+
+.footer {
+  width: 100%;
+}
+.footer__navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
