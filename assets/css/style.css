@@ -1300,7 +1300,6 @@ button.swiper-pagination-bullet {
         left: 0;
         overflow: auto;
         background-color: #FFFFFF;
-        background: linear-gradient(323.19deg, rgba(255, 83, 18, 0.32), rgba(27, 192, 243, 0.17));
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -1450,7 +1449,7 @@ button.swiper-pagination-bullet {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -1539,7 +1538,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (min-width: 768px) {
     .header__navigation__language {
-        margin-left: auto;
+        margin-left: 2%;
         padding: 5px;
         display: flex;
         align-items: center;
@@ -1672,8 +1671,9 @@ button.swiper-pagination-bullet {
 }
 
 .hero__move:hover .hero__move__icon {
-    color: #F0553B;
-    margin-top: 10px;
+    margin-top: 13px;
+    transform: scale(1.1);
+    color: 0;
 }
 
 .hero__move__text {
@@ -1876,12 +1876,13 @@ button.swiper-pagination-bullet {
 
 .hero-overlay__sub-title {
     margin-bottom: 24px;
-    width: calc(100% - 164px);
+    width: calc(100% - 79px);
     font-weight: 300;
     font-size: 17px;
     line-height: 1.23;
     letter-spacing: 0.035em;
-    text-align: justify;
+    font-family: "Montserrat";
+    font-style: normal;
 }
 
 .hero-overlay__navigation {
@@ -2031,7 +2032,7 @@ button.swiper-pagination-bullet {
 
 .about__wrapper__title {
     margin-bottom: 3%;
-    font-family: "Bebas Neue", cursive, sans-serif;
+    font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 99.36px;
     line-height: 1.107;
@@ -2183,7 +2184,7 @@ button.swiper-pagination-bullet {
 
 .couple__wrapper__text {
     padding: 5px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 22.0357px;
     line-height: 1.134;
@@ -2319,7 +2320,7 @@ button.swiper-pagination-bullet {
 
 .places__wrapper__title__name {
     margin-bottom: 8px;
-    font-family: "Bebas Neue", cursive, sans-serif;
+    font-family: "Bebas Neue", cursive;
     font-weight: 400;
     font-size: 99.3641px;
     line-height: 1.04;
@@ -2332,7 +2333,7 @@ button.swiper-pagination-bullet {
 
 .places__wrapper__title__description {
     margin-bottom: 168px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 41.5928px;
     line-height: 1.105;
@@ -2347,7 +2348,7 @@ button.swiper-pagination-bullet {
     margin-left: 163px;
     padding: 15px 52px;
     width: 183px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
@@ -2408,16 +2409,13 @@ button.swiper-pagination-bullet {
 
 .review__wrapper__cap {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    left: 36%;
+    position: absolute;
+    width: calc(100% - 180px);
     font-family: "Bebas Neue", cursive, sans-serif;
     font-weight: 400;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.035em;
     text-transform: uppercase;
+    transform: translate(170px, -10px);
 }
 
 .review__wrapper__cap__primary {
@@ -2432,7 +2430,7 @@ button.swiper-pagination-bullet {
 
 .review__wrapper__cap__secondary {
     position: absolute;
-    left: 20.5%;
+    left: 61.5%;
     top: 25%;
     width: 39%;
     font-size: 99.3641px;
@@ -2440,6 +2438,13 @@ button.swiper-pagination-bullet {
     text-align: right;
     color: #0A2936;
     z-index: 2;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1825px) {
+    .review__wrapper__cap__secondary {
+        top: 5%;
+    }
 }
 
 .review__people {
@@ -2453,6 +2458,12 @@ button.swiper-pagination-bullet {
 .review__people__image {
     margin-right: auto;
     padding-top: 4.7%;
+}
+
+@media screen and (max-width: 1825px) {
+    .review__people__image {
+        display: none;
+    }
 }
 
 .review__people__image .image-hero {
@@ -2480,7 +2491,7 @@ button.swiper-pagination-bullet {
 .review__people__box .content__title {
     width: 49%;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     line-height: 1.125;
     display: flex;
     flex-direction: column;
@@ -2509,7 +2520,7 @@ button.swiper-pagination-bullet {
 }
 
 .review__people__box .content__title__text {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 300;
     font-size: 22px;
     line-height: 1.227;
@@ -2539,7 +2550,7 @@ button.swiper-pagination-bullet {
 }
 
 .review__people__box .content__navigation__social {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
@@ -2690,6 +2701,10 @@ button.swiper-pagination-bullet {
     border: none;
 }
 
+.feedback__contact__btn:hover {
+    transform: scale(1.05);
+}
+
 .feedback .feedback__contact__data::after {
     display: block;
     position: absolute;
@@ -2780,6 +2795,7 @@ button.swiper-pagination-bullet {
 }
 
 .footer__navigation__title {
+    margin-right: 10px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -2804,6 +2820,7 @@ button.swiper-pagination-bullet {
 }
 
 .footer__navigation__select {
+    margin-right: 30px;
     width: 100%;
     max-width: 253px;
     height: 100%;
@@ -2825,7 +2842,7 @@ button.swiper-pagination-bullet {
 
 .footer__navigation__select__btn {
     padding-top: 14px;
-    padding-right: 25px;
+    padding-right: 16px;
     padding-bottom: 14px;
     padding-left: 16px;
     width: 100%;
@@ -2843,6 +2860,21 @@ button.swiper-pagination-bullet {
     border: 0.95px solid #B59C93;
 }
 
+.footer__navigation__select__btn:hover {
+    background-color: #F1E8E0;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__navigation__select__btn {
+        width: 154px;
+    }
+}
+
+.footer__navigation__select #select__box__btn:hover #icon-open {
+    color: #0A2936;
+    transform: rotate(180deg);
+}
+
 .footer__navigation__select .icon-open {
     position: relative;
     padding-top: 4px;
@@ -2851,12 +2883,8 @@ button.swiper-pagination-bullet {
     transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__navigation__purchase {
-    width: calc(100% - 1172px);
-}
-
-.footer__navigation .footer--purchase {
-    width: 100%;
+.footer__navigation .footer--purchase--item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer__pages {
@@ -2909,7 +2937,12 @@ button.swiper-pagination-bullet {
     align-content: center;
 }
 
+.footer__contacts .contacts__box__title {
+    display: flex;
+}
+
 .footer__contacts .contacts__box__name {
+    margin-left: 8px;
     margin-bottom: 14px;
     font-weight: 500;
     font-size: 15px;
@@ -2929,4 +2962,99 @@ button.swiper-pagination-bullet {
 
 .footer__contacts .contacts__list__item:not(:last-child) {
     margin-bottom: 8px;
+}
+
+.footer__social {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.footer .footer--social {
+    margin-right: 20px;
+}
+
+.footer .item__icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: sub;
+    fill: currentColor;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .item__icon:hover {
+    transform: scale(1.1);
+}
+
+.footer .icon-instagram:hover {
+    color: #ff2f6e;
+}
+
+.footer .icon-tiktok:hover {
+    color: red;
+}
+
+.footer .icon-youtube:hover {
+    color: red;
+}
+
+.footer .icon-facebook:hover {
+    color: rgb(0, 81, 255);
+}
+
+.footer .footer--language:not(:last-child) {
+    margin-right: 8px;
+}
+
+.footer__made {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.214;
+    text-align: center;
+}
+
+.footer__made__company {
+    color: #B59C93;
+}
+
+.select__box__list {
+    display: none;
+    position: absolute;
+    top: 85%;
+    padding: 0 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.select__box__list__item {
+    padding: 10px 5px;
+}
+
+.select__box__list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.select__box__list__item__link {
+    color: #0A2936;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.select__box__list__item__link:hover {
+    transform: scale(1.2);
 }
