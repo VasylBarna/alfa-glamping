@@ -180,7 +180,7 @@
             left: 0;
             overflow: auto;
             background-color: $background-body-color;
-            background: linear-gradient(323.19deg, rgb(255 83 18 / 32%), rgb(27 192 243 / 17%));
+            // background: linear-gradient(323.19deg, rgb(255 83 18 / 32%), rgb(27 192 243 / 17%));
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -236,7 +236,13 @@
                     font-weight: $font-weight-body;
                     line-height: 1.219;
                     color: $text-color;
-                    transition: color $transition-timing-function;
+                    transition: color $transition-timing-function;backface-visibility: hidden;
+                    &:hover {
+                            transform: scale(1.05);
+                            // transform: line-height(2);
+                            color: 0000;
+                            backface-visibility: hidden;
+                        }
 
                     @media screen and (max-width: $max-mobile) {
 
@@ -246,10 +252,7 @@
 
                     }
 
-                    &:hover {
-                        transform: scale(1.1);
-                        color: $background-body-color;
-                    }
+                 
                 }
 
                 .link__current {
@@ -307,7 +310,7 @@
 
                 &__text {
                     margin-left: 22px;
-                    margin-bottom: 2px;
+                    margin-bottom: 3px;
                     font-weight: $font-weight-secondary;
                     font-size: 9px;
                     line-height: 1.22;
@@ -356,8 +359,8 @@
                     cursor: pointer;
 
                     &:hover {
-                        transform: scale(1.1);
-                        color: $background-body-color;
+                        transform: scale(1.2);
+                        // color: $background-body-color;
                     }
                 }
             }
@@ -408,7 +411,7 @@
                 display: none;
             }
             @media screen and (min-width: $tablet) {
-                margin-left: auto;
+                margin-left: 2%;
                 padding: 5px;
                 display: flex;
                 align-items: center;
@@ -427,8 +430,11 @@
     .item--bg {
           &:hover,
           &:focus {
-            background: $background-accent;
-            box-shadow: $box-shadow-button;
+              transform: scale(1.025);
+              transform-origin: 100% 0;
+            // color: $background-body-color;
+            // background: $background-accent;
+            // box-shadow: $box-shadow-button;
           }
       }
 
@@ -436,8 +442,9 @@
 
         &:hover,
         &:focus {
-            background: $background-btn;
-            box-shadow: $box-shadow-button;
+            transform: scale(1.1);
+            // background: $background-btn;
+            // box-shadow: $box-shadow-button;
         }
     }
 
@@ -456,13 +463,13 @@
 
     .icon-question {
         @media screen and (max-width: $max-mobile) {
-            vertical-align: middle;
+        vertical-align: bottom;
         }
 
         margin-right: 9px;
-        color: $background-secondary;
+        color: $text-color;
         &:hover {
-            color: $text-color;
+            color: 0000;
         }
     }
 
@@ -477,10 +484,12 @@
         color: #ff2f6e;
     }
 
+    // .icon-tiktok {
+    //     color: white;
+    // }
     .icon-tiktok:hover {
         color: red;
-        background: black;
-    }
+     }
 
     .icon-youtube:hover {
         color: red;

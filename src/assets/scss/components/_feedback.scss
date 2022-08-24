@@ -1,7 +1,7 @@
  .feedback {
   position: relative;
   width: calc(100% - 90px);
-  padding-bottom: 5.3%;
+  padding-bottom: 4.2%;
 
   &__wrapper {
     display: flex;   
@@ -25,9 +25,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-    background: $background-secondary url(./../images/ball.gif) top right no-repeat;
-      // mix-blend-mode: screen;
-      background-blend-mode: screen;
+    // background: $background-secondary url(./../images/ball.gif) top right no-repeat;
+    //   // mix-blend-mode: screen;
+    //   background-blend-mode: screen;
+
+      background: #DCC9C0 url(./../images/ball.gif) top -265px right -445px no-repeat;
+        background-blend-mode: screen;
+        background-size: cover;
+      
 
       &__title {
 
@@ -129,6 +134,9 @@
         color: $color-btn;
         background-color: $background-btn;
         border: none;
+        &:hover {
+            transform: scale(1.05);
+          }
       }
 
     }
@@ -156,7 +164,6 @@
         font-size: 18px;
         line-height: 1.11;
         display: flex;
-        align-items: flex-end;
         letter-spacing: 0.05em;
         text-transform: uppercase;
 
