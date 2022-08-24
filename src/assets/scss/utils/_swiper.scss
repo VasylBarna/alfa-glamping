@@ -756,17 +756,19 @@ button.swiper-pagination-bullet {
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .swiper-button-prev {
-  left: 113px;
+  // left: 113px;
   right: auto;
-  top: 715px;
+  top: 697px;
   z-index: 999;
+  transform: translate(100px, 0px);
 }
 
 .swiper-button-next {
   right: auto;
-  left: 174px;
-  top: 715px;
+  // left: 174px;
+  top: 697px;
   z-index: 9;
+  transform: translate(173px, 0px);
 }
 
 .swiper-button-prev::after,
@@ -787,17 +789,19 @@ text-align: center;
 
 .image-slider__image img{
   width: 100%;
-    max-width: 1520px;
+    max-width: 1517px;
     height: 100%;
-    max-height: 778px;
+    max-height: 777px;
+    object-fit: cover;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: calc(100% - 17%);
-  bottom: 17%;
+width: 70%;
+  left: 23%;
+  bottom: 9%;
   text-align: center;
   margin-left: auto;
-  position: sticky;
+  position: absolute;;
 }
 
  .swiper-pagination-bullet {
@@ -834,12 +838,12 @@ text-align: center;
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  position: absolute;
-  left: 17%;
-  bottom: 15%;
+position: absolute;
+  left: 23%;
+  bottom: 7.3%;
   z-index: 50;
   height: 2px;
-  width: 83%;
+  width: 70%;;
   background-color: $color-btn;
 }
 

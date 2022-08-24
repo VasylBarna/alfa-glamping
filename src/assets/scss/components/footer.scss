@@ -10,7 +10,7 @@
        }
 
       &__navigation {
-        margin-bottom: 47px;
+        margin-bottom: 78px;
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
@@ -128,7 +128,7 @@
 
 
         .footer--list {
-          padding: 31px 0;
+          padding: 25px 0;
           display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -206,14 +206,15 @@
       }
 
       &__social {
+        margin-top: 29px;
         margin-bottom: 25px;
-            width: 100%;
-              display: flex;
-              flex-direction: row;
-              flex-wrap: nowrap;
-              justify-content: space-between;
-              align-items: center;
-              align-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
       }
 
       .footer--social {

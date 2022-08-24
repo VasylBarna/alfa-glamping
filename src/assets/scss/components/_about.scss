@@ -5,6 +5,23 @@
   &__wrapper {
     position: relative;
 
+    &__transparenty {
+      position: absolute;
+      top: 12%;
+      left: 74%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      font-family: $font-family-title;
+      font-style: normal;
+      font-weight: $font-weight-body;
+      font-size: 233.125px;
+      line-height: 1.11;;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $background-secondary;
+      opacity: 0.2;
+    }
+
     &__title {
       margin-bottom: 3%;
       font-family: $font-family-title;
