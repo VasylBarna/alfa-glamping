@@ -5,7 +5,6 @@
     &__wrapper {
       padding-top: 31px;
       padding-right: 73px;
-      padding-bottom: 20px;
       padding-left: 85px;
        }
 
@@ -123,20 +122,37 @@
       }
       
       &__pages {
-        margin-left: auto;
-        margin-right: auto;
-
+          padding-top: 25px;
+            padding-right: 0;
+            padding-bottom: 25px;
+            padding-left: 0px;
+          border-top: 1px solid $color-menu;
+            border-bottom: 1px solid $color-menu;
 
         .footer--list {
-          padding: 25px 0;
+        
           display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             align-content: center;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid $color-menu;
-            border-bottom: 1px solid $color-menu;
+
+            .footer__pages__list__item {
+                font-weight: $font-weight-body;
+                font-size: $font-size-body;
+                line-height: 1.2;
+                color: $text-color;
+
+                &:not(:last-child) {
+                    margin-left: 53px;
+                  }
+              
+            }
+            .item__link {
+              color: $text-color;
+            }
+
 
         }
 
@@ -154,7 +170,8 @@
       }
 
     &__contacts {
-        margin-top: 50px;
+        margin-top: 30.5px;
+        padding-left: 25px;
         padding-bottom: 26px;
         width: 100%;
           display: flex;
@@ -218,7 +235,8 @@
       }
 
       .footer--social {
-        margin-right: 20px;
+        margin-right: 27px;
+        padding: 0;
       }
         .item__icon {
           width: 24px;
@@ -250,8 +268,12 @@
                         // .icon-facebook:hover {
                         //   color: rgb(0, 81, 255);
                         // }
+                        .footer__language {
+                          display: inline-flex;
+                        }
 
                         .footer--language {
+                            padding: 0;
                             font-weight: 300;
                             font-size: 24px;
                             line-height: 1.125;
@@ -263,7 +285,8 @@
                         }
 
                         .footer--language:not(:last-child) {
-                            margin-right: 8px;
+                            margin-right: 12px;
+                            
                           }
 
                           .language__current {
