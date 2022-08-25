@@ -232,27 +232,42 @@
             transform: scale(1.1);
           }
         }
-                        .icon-instagram:hover {
-                          color: #ff2f6e;
-                        }
+                        // .icon-instagram:hover {
+                        //   color: #ff2f6e;
+                        // }
             
                         // .icon-tiktok {
                         //     color: white;
                         // }
-                        .icon-tiktok:hover {
-                          color: red;
-                        }
+                        // .icon-tiktok:hover {
+                        //   color: red;
+                        // }
             
-                        .icon-youtube:hover {
-                          color: red;
-                        }
+                        // .icon-youtube:hover {
+                        //   color: red;
+                        // }
             
-                        .icon-facebook:hover {
-                          color: rgb(0, 81, 255);
+                        // .icon-facebook:hover {
+                        //   color: rgb(0, 81, 255);
+                        // }
+
+                        .footer--language {
+                            font-weight: 300;
+                            font-size: 24px;
+                            line-height: 1.125;
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #0A2936;
                         }
 
                         .footer--language:not(:last-child) {
                             margin-right: 8px;
+                          }
+
+                          .language__current {
+                            font-weight: 500;
                           }
 }
 

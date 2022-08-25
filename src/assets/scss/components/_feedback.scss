@@ -1,10 +1,10 @@
  .feedback {
   position: relative;
-  width: calc(100% - 90px);
   padding-bottom: 4.2%;
   
 
   &__wrapper {
+    width: calc(100% - 90px);
     display: flex;   
   }
 
@@ -76,6 +76,7 @@
                 font-size: 17px;
                 line-height: 1.123;
                 letter-spacing: 0.035em;
+                color: $text-color;
                 border: none;
                 outline: none;
                 background-color: transparent;

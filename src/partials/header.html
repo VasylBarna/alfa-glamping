@@ -8,23 +8,49 @@
   <div class="header__box">
     <div id="language" hidden>EN</div>
     <a href="./index.html" class="header__logo" id="header__logo">
-      <img
+      <svg
         class="header__logo--burger"
+        alt="logo burger"
         id="logo--burger"
-        src="./assets/images/burger-logo.png"
-        alt="logo"
         hidden
-      />
-      <img
-        class="header__logo--small"
-        id="logo"
-        src="./assets/images/logo.png"
-        alt="logo"
-      />
+      >
+        <use href="./assets/images/symbol-defs.svg#logo--burger"></use>
+      </svg>
+      <svg class="header__logo--small" alt="logo small" id="logo">
+        <use href="./assets/images/symbol-defs.svg#logo-small"></use>
+      </svg>
     </a>
-    <div class="header__burger" id="header__burger">
+    <!-- <svg class="header__burger" id="header__burger">
+      <use href="./assets/images/symbol-defs.svg#header__burger"></use>
+      <use href="./assets/images/symbol-defs.svg#burger-close"></use>
+    </svg> -->
+    <!-- <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-button
+    >
+      <svg aria-label="Toggle mobile menu">
+        <use
+          class="header__burger"
+          href="./assets/images/symbol-defs.svg#header__burger"
+        ></use>
+        <use
+          class="burger-close"
+          href="./assets/images/symbol-defs.svg#burger-close"
+        ></use>
+      </svg>
+    </button> -->
+    <!-- <div class="header__burger" id="header__burger">
       <span></span>
-    </div>
+    </div> -->
+    <svg aria-label="Toggle mobile menu" class="header__burger">
+      <use
+        class="header__burger"
+        href="./assets/images/symbol-defs.svg#header__burger"
+      ></use>
+    </svg>
     <nav class="header__navigation">
       <ul class="header__navigation__list">
         <li class="header__navigation__list__item item--bg">
@@ -85,6 +111,7 @@
           </button>
         </div>
       </div>
+      <div class="header__navigation__language">EN</div>
       <ul class="header__navigation__social__list">
         <li class="header__navigation__social__list__item">
           <a href="#" class="item__link"
@@ -119,6 +146,6 @@
         </li>
       </ul>
     </nav>
-    <div class="header__navigation__language">EN</div>
+    <!-- <div class="header__navigation__language">EN</div> -->
   </div>
 </header>

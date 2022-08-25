@@ -240,7 +240,7 @@ $(document).ready(function () {
   );
   // mySliderAllSlides.innerHTML = myImageSlider.slides.length;
   myImageSlider.on('slideChange', function () {
-    let currentSlide = ++myImageSlider.realIndex;
+    let currentSlide = '0' + ++myImageSlider.realIndex;
     mySliderCurrentSlide.innerHTML = currentSlide;
   });
 
