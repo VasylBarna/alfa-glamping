@@ -1269,7 +1269,7 @@ button.swiper-pagination-bullet {
 }
 @media screen and (min-width: 1200px) {
   .header__navigation__list__item:not(:last-child) {
-    margin-right: 1.1666666667%;
+    margin-right: 2.5%;
   }
 }
 .header__navigation__list__item .item__link {
@@ -1591,6 +1591,9 @@ button.swiper-pagination-bullet {
   padding-bottom: 35px;
   padding-left: 20px;
   background: #DCC9C0;
+  background: #DCC9C0 url(./../images/ball.gif) top -265px right -445px no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
 }
 @media screen and (min-width: 1200px) {
   .hero-overlay {
@@ -2336,7 +2339,7 @@ button.swiper-pagination-bullet {
   background-size: cover;
 }
 .feedback__contact__title__text {
-  margin-bottom: 5.5%;
+  margin-bottom: 5.6%;
   display: flex;
   align-items: center;
   font-size: 41.5928px;
@@ -2345,7 +2348,8 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
 }
 .feedback__contact__title__description {
-  margin-bottom: 5.6%;
+  padding: 2px 0;
+  margin-bottom: 5.7%;
   width: 89%;
   font-weight: 300;
   font-size: 17px;
@@ -2353,7 +2357,7 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.035em;
 }
 .feedback__contact__data {
-  margin-bottom: 13%;
+  margin-bottom: 13.6%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2364,7 +2368,7 @@ button.swiper-pagination-bullet {
 .feedback__contact__data .form-input {
   padding-top: 2px;
   padding-right: 0px;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   padding-left: 2px;
   width: 100%;
   max-width: 258px;
@@ -2409,7 +2413,7 @@ button.swiper-pagination-bullet {
   resize: none;
 }
 .feedback__contact__btn {
-  padding: 11px 56px;
+  padding: 11.5px 56px;
   width: 100%;
   max-width: 158px;
   font-weight: 500;
@@ -2494,7 +2498,6 @@ button.swiper-pagination-bullet {
 .footer__wrapper {
   padding-top: 31px;
   padding-right: 73px;
-  padding-bottom: 20px;
   padding-left: 85px;
 }
 .footer__navigation {
@@ -2589,19 +2592,32 @@ button.swiper-pagination-bullet {
   margin-right: 10px;
 }
 .footer__pages {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 25px;
+  padding-right: 0;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  border-top: 1px solid #B59C93;
+  border-bottom: 1px solid #B59C93;
 }
 .footer__pages .footer--list {
-  padding: 25px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #B59C93;
-  border-bottom: 1px solid #B59C93;
+}
+.footer__pages .footer--list .footer__pages__list__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0A2936;
+}
+.footer__pages .footer--list .footer__pages__list__item:not(:last-child) {
+  margin-left: 53px;
+}
+.footer__pages .footer--list .item__link {
+  color: #0A2936;
 }
 .footer__pages .icon-question {
   width: 22px;
@@ -2613,7 +2629,8 @@ button.swiper-pagination-bullet {
   transform: scale(1.1);
 }
 .footer__contacts {
-  margin-top: 50px;
+  margin-top: 30.5px;
+  padding-left: 25px;
   padding-bottom: 26px;
   width: 100%;
   display: flex;
@@ -2667,7 +2684,8 @@ button.swiper-pagination-bullet {
   align-content: center;
 }
 .footer .footer--social {
-  margin-right: 20px;
+  margin-right: 27px;
+  padding: 0;
 }
 .footer .item__icon {
   width: 24px;
@@ -2680,7 +2698,11 @@ button.swiper-pagination-bullet {
 .footer .item__icon:hover {
   transform: scale(1.1);
 }
+.footer .footer__language {
+  display: inline-flex;
+}
 .footer .footer--language {
+  padding: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.125;
@@ -2691,7 +2713,7 @@ button.swiper-pagination-bullet {
   color: #0A2936;
 }
 .footer .footer--language:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 12px;
 }
 .footer .language__current {
   font-weight: 500;
