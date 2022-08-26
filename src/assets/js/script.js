@@ -98,7 +98,8 @@ $(document).ready(function () {
       el: '.swiper-scrollbar',
       draggable: 'true',
       dragSize: 16,
-      snapOnRelease: true,
+      // snapOnRelease: true,
+      hide: false,
     },
     mousewheel: {
       enabled: true,
@@ -113,7 +114,7 @@ $(document).ready(function () {
 
     // Переключение при клике на слайд
     slideToClickedSlide: true,
-    // breakpointsBase: 'container',
+    breakpointsBase: 'container',
     grabCursor: true,
     // бесконечний слайдер
     loop: true,
@@ -129,7 +130,7 @@ $(document).ready(function () {
     //  Навигация по хешу
     hashNavigation: {
       // Отслеживать состояние
-      watchState: true,
+      // watchState: true,
     },
     keyboard: {
       // вкл /отк
@@ -146,7 +147,7 @@ $(document).ready(function () {
     // откл функционал слайдера при меншем кол-ве фото чем нужно
     watchOverflow: true,
     //отступ между фото
-    spaceBetween: 10,
+    spaceBetween: 0,
     // кол-во пролистиваемих слайдов
     slidesPerGroup: 1,
     // активний слайд по центру
@@ -170,25 +171,28 @@ $(document).ready(function () {
     // },
 
     // скорость переключение слайдо
-    speed: 800,
+    speed: 700,
 
     // Брейк поинти (адаптив)
-    // breakpoints: {
-    //   320: {
-    //     slidesPerView: 1,
-    //   },
-    //   480: {
-    //     slidesPerView: 2,
-    //   },
-    //   990: {
-    //     slidesPerView: 3,
-    //   },
-    // },
+    breakpoints: {
+      320: {
+        freeMode: true,
+        mousewheel: {
+          enabled: false,
+          // Чуствителбность колеса миши
+          sensitivity: 1,
+          // Класс обьекта на котором будет срабативать прокрутка мишью
+          eventsTarget: '.image-slider',
+        },
+      },
+      480: {},
+      990: {},
+    },
 
     // рассчитать каждый прогресс слайдов c 'watchSlidesVisibility'
-    // watchSlidesProgress: true,
+    watchSlidesProgress: true,
     //  слайды, которые находятся в видовом экране, будут иметь дополнительный видимый класс
-    // watchSlidesVisibility: true,
+    watchSlidesVisibility: true,
     //  отключить предзагрузку картинок
     // updateOnImagesReady: true,
 

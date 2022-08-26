@@ -1,11 +1,11 @@
- .feedback {
+.feedback {
   position: relative;
   padding-bottom: 4.2%;
-  
+  width: 100%;
 
   &__wrapper {
     width: calc(100% - 90px);
-    display: flex;   
+    display: flex;
   }
 
   &__contact {
@@ -26,195 +26,171 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-      background: #DCC9C0 url(./../images/ball.gif) top -265px right -445px no-repeat;
-        background-blend-mode: screen;
-        background-size: cover;
-      
+    background: #dcc9c0 url(./../images/ball.gif) top -265px right -445px
+      no-repeat;
+    background-blend-mode: screen;
+    background-size: cover;
 
-      &__title {
-
-
-
-          &__text {
-            margin-bottom: 5.6%;
-            display: flex;
-            align-items: center;
-            font-size: 41.5928px;
-            line-height: 1.105;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-          }
-
-          &__description {
-            padding: 2px 0;
-            margin-bottom: 5.7%;
-            width: calc(100% - 11%);
-              font-weight: 300;
-              font-size: 17px;
-              line-height: 1.123;
-              letter-spacing: 0.035em;
-          }
+    &__title {
+      &__text {
+        margin-bottom: 5.6%;
+        display: flex;
+        align-items: center;
+        font-size: 41.5928px;
+        line-height: 1.105;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
       }
 
-      &__data {
-           margin-bottom: 13.6%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: space-between;
-          justify-content: space-between;
-          align-items: center;
-
-            .form-input {
-                padding-top: 2px;
-                padding-right: 0px;
-                padding-bottom: 4px;
-                padding-left: 2px;
-                width: 100%;
-                max-width: 258px;
-                min-height: 21px;
-                font-weight: 300;
-                font-size: 17px;
-                line-height: 1.123;
-                letter-spacing: 0.035em;
-                color: $text-color;
-                border: none;
-                outline: none;
-                background-color: transparent;
-                border-bottom: 1px solid $text-color;        
-            }
-
-            .form-field {
-              width: 100%;
-                max-width: 258px;
-              display: flex;
-                position: relative;
-                flex-direction: column;
-
-              &:not(:last-child) {
-                    margin-bottom: 24px;
-                }
-            }
-                .form-lable {
-                  display: contents;
-                  font-weight: 500;
-                  font-size: 15px;
-                  line-height: 1.2;
-                  letter-spacing: 0.035em;
-
-                    &:not(:last-child) {
-                        margin-bottom: 4px;
-                      }
-                  }    
-
-              .comment {
-                transition: border-color $transition-timing-function;
-                   &:focus::placeholder {
-                       line-height: 1.14;
-                      }
-                  }
-                textarea {
-                    resize: none;
-                  }
+      &__description {
+        padding: 2px 0;
+        margin-bottom: 5.7%;
+        width: calc(100% - 11%);
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.123;
+        letter-spacing: 0.035em;
       }
+    }
 
-      &__btn {
-        padding: 11.5px 56px;
+    &__data {
+      margin-bottom: 13.6%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between;
+      justify-content: space-between;
+      align-items: center;
+
+      .form-input {
+        padding-top: 2px;
+        padding-right: 0px;
+        padding-bottom: 4px;
+        padding-left: 2px;
         width: 100%;
-        max-width: 158px;
+        max-width: 258px;
+        min-height: 21px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.123;
+        letter-spacing: 0.035em;
+        color: $text-color;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid $text-color;
+      }
+
+      .form-field {
+        width: 100%;
+        max-width: 258px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+      .form-lable {
+        display: contents;
         font-weight: 500;
         font-size: 15px;
         line-height: 1.2;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.035em;
-        text-transform: uppercase;      
-        color: $color-btn;
-        background-color: $background-btn;
-        border: none;
-        &:hover {
-            transform: scale(1.05);
-          }
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
       }
 
-    }
-
-
-    .feedback__contact__data::after {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 81.7%;
-      left: 8.9%;
-      bottom: 202px;
-      border-radius: 2px;
-      border-bottom: 1px solid $text-color;
-    }
-
-    .feedback__contact__us {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.11;
-        display: flex;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-
-        &__wrapper {
-          display: flex;
-          &:first-child {
-            margin-bottom: 18px;
-          }
-
-          .feedback__icon {
-            margin-right: 19px;
-          }
+      .comment {
+        transition: border-color $transition-timing-function;
+        &:focus::placeholder {
+          line-height: 1.14;
         }
+      }
+      textarea {
+        resize: none;
+      }
     }
 
- }
+    &__btn {
+      padding: 11.5px 56px;
+      width: 100%;
+      max-width: 158px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      color: $color-btn;
+      background-color: $background-btn;
+      border: none;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 
+  .feedback__contact__data::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 81.7%;
+    left: 8.9%;
+    bottom: 202px;
+    border-radius: 2px;
+    border-bottom: 1px solid $text-color;
+  }
 
+  .feedback__contact__us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+    display: flex;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
+    &__wrapper {
+      display: flex;
+      &:first-child {
+        margin-bottom: 18px;
+      }
 
+      .feedback__icon {
+        margin-right: 19px;
+      }
+    }
+  }
+}
 
+.feedback-swiper {
+  width: calc(100% - 27.5%);
+  // height: 840px;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
 
-
-
-
- .feedback-swiper {
-    width: calc(100% - 27.5%);
-    // height: 840px;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
- }
-
-
-
-
-
-
-
-
-
-
- .image-feedback__wrapper {
-// max-height: 840px;
- }
+.image-feedback__wrapper {
+  // max-height: 840px;
+}
 
 .feedback__image-desk {
   // height: 840px;
-  
 }
 
 .image-feedback__image {
@@ -225,16 +201,13 @@
   height: auto;
   //  max-height: 778px;
   max-height: 840px;
-
 }
 .swiper-pagination-feedback {
-width: inherit;
-z-index: 2;
+  width: inherit;
+  z-index: 2;
   bottom: 0;
-position: absolute;}
-
-
-
+  position: absolute;
+}
 
 // /**
 //  * Swiper 6.3.5
@@ -867,4 +840,3 @@ position: absolute;}
 //   -webkit-backface-visibility: hidden;
 //   backface-visibility: hidden;
 // }
-

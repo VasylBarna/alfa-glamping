@@ -1,38 +1,37 @@
 .overlay-project {
- width: 100%;
+  width: 100%;
 
-  position: relative;
+  // position: relative;
   overflow: hidden;
   &:hover .hero-overlay,
   &:focus .hero-overlay {
-  transform: translateY(0%);
+    transform: translateY(0%);
   }
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-
   }
   @media screen and (min-width: $desktop) {
     width: calc(100% - 68px);
   }
-
 }
 
 .hero-overlay {
   // display: none;
-    position: absolute;
-    z-index: 3;
-    overflow: hidden;
-    // transform: translateX(-1000%);
-    box-sizing: border-box;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+  // transform: translateX(-1000%);
+  box-sizing: border-box;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (max-width: $max-mobile) {
+    position: static;
     width: 100%;
-    bottom: 0;
+    // bottom: 0;
   }
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     top: 50%;
     width: 50%;
   }
-  @media screen and (min-width: $desktop) { 
+  @media screen and (min-width: $desktop) {
     // top: 25%;
     top: 215px;
   }

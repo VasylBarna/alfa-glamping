@@ -5,9 +5,9 @@ $(document).ready(function () {
       type: 'bullets',
       clickable: true,
       dynamicBullets: true,
-      // renderBullet: function (index, classname) {
-      //   return '<span class="' + classname + '">' + (index + 1) + '</span>';
-      // },
+      renderBullet: function (index, classname) {
+        return '<span class="' + classname + '">' + (index + 1) + '</span>';
+      },
     },
 
     effect: 'fade',
@@ -34,10 +34,10 @@ $(document).ready(function () {
     touchAngle: 45,
 
     //  Навигация по хешу
-    hashNavigation: {
-      // Отслеживать состояние
-      watchState: true,
-    },
+    // hashNavigation: {
+    //   // Отслеживать состояние
+    //   watchState: true,
+    // },
     keyboard: {
       // вкл /отк
       enabled: true,
@@ -53,7 +53,7 @@ $(document).ready(function () {
     // откл функционал слайдера при меншем кол-ве фото чем нужно
     watchOverflow: true,
     //отступ между фото
-    spaceBetween: 10,
+    spaceBetween: 0,
     // кол-во пролистиваемих слайдов
     slidesPerGroup: 1,
     // активний слайд по центру
@@ -64,7 +64,7 @@ $(document).ready(function () {
     slidesPerColumn: 1,
 
     // скорость переключение слайдо
-    speed: 800,
+    speed: 700,
 
     // Брейк поинти (адаптив)
     // breakpoints: {
@@ -98,5 +98,40 @@ $(document).ready(function () {
   });
   newsliderBlock.addEventListener('mouseleave', function (e) {
     feedbackSlider.autoplay.stop();
+  });
+});
+
+// VARIANT
+
+let childSwiper = document.querySelectorAll('.swiper-v');
+childSwiper.forEach(function (index, value) {
+  console.log(index.parentElement.querySelector('.single-slider__button-next'));
+  let swyper = new Swiper(index, {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: index.parentElement.querySelector('.single-slider__button-next'),
+      prevEl: index.parentElement.querySelector('.single-slider__button-prev'),
+    },
+    pagination: {
+      el: index.parentElement.querySelector('.single-slider__pagination'),
+      type: 'fraction',
+      formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+      },
+      formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+      },
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' +
+          currentClass +
+          '"></span>' +
+          ' / ' +
+          '<span class="' +
+          totalClass +
+          '"></span>'
+        );
+      },
+    },
   });
 });
