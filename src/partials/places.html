@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<section class="places container">
+<section class="places">
   <div class="places__wrapper">
     <div class="places__wrapper__title">
       <h3 class="places__wrapper__title__name">
@@ -9,28 +9,127 @@
       <p class="places__wrapper__title__description">
         Beautiful Nature with comfort
       </p>
-      <button class="places__wrapper__title__btn">view All</button>
+      <button class="places__wrapper__title__btn place--btn--mob">
+        choose location
+      </button>
+      <button class="places__wrapper__title__btn place--btn--desk">
+        view All
+      </button>
+    </div>
+    <div class="places__gallery-mob">
+      <div class="container gallery-mob__overlay">
+        <h3 class="gallery-mob__overlay__title">
+          <p class="gallery-mob__overlay__count">01</p>
+          ATLIT BEACH
+        </h3>
+        <p class="gallery-mob__overlay__option">
+          6 guests • 4 adolts + 2 kids • 1 beth
+        </p>
+        <div class="gallery-mob__overlay__view-select">
+          <ul class="view-select__list row">
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="20" height="14">
+                <use href="./assets/images/symbol-defs.svg#wifi"></use>
+              </svg>
+              <p class="view-select__list__item__text">Wi-Fi</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="15">
+                <use href="./assets/images/symbol-defs.svg#parking"></use>
+              </svg>
+              <p class="view-select__list__item__text">Parking</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="13" height="18">
+                <use href="./assets/images/symbol-defs.svg#games"></use>
+              </svg>
+              <p class="view-select__list__item__text">Games</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="19">
+                <use href="./assets/images/symbol-defs.svg#ac"></use>
+              </svg>
+              <p class="view-select__list__item__text">AC</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="16" height="18">
+                <use href="./assets/images/symbol-defs.svg#eat"></use>
+              </svg>
+              <p class="view-select__list__item__text">Eat</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="18">
+                <use href="./assets/images/symbol-defs.svg#bbq"></use>
+              </svg>
+              <p class="view-select__list__item__text">BBQ</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="18" height="17">
+                <use href="./assets/images/symbol-defs.svg#hammock"></use>
+              </svg>
+              <p class="view-select__list__item__text">Hammock</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="16" height="17">
+                <use href="./assets/images/symbol-defs.svg#coffe"></use>
+              </svg>
+              <p class="view-select__list__item__text">Coffe</p>
+            </li>
+          </ul>
+        </div>
+        <p class="gallery-mob__overlay__description">
+          Dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+          amet. Dolor sit amet...
+        </p>
+        <button class="gallery-mob__overlay__btn">view place</button>
+      </div>
+      <div class="places__wrapper__gallery">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/place.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/places.png"
+          />
+          <img
+            class="places__image"
+            src="./assets/images/mob/place.png"
+            alt="places image"
+          />
+        </picture>
+      </div>
+      <div class="places__wrapper__gallery">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/place1.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/places1.png"
+          />
+          <img
+            class="places__image"
+            src="./assets/images/mob/place1.png"
+            alt="places image"
+          />
+        </picture>
+      </div>
     </div>
     <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places.png"
-        alt="places image"
-      />
-    </div>
-    <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places1.png"
-        alt="places image"
-      />
-    </div>
-    <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places2.png"
-        alt="places image"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/places2.png"
+        />
+        <img
+          class="places__image mob--hidden"
+          src="./assets/images/places2.png"
+          alt="places image"
+        />
+      </picture>
     </div>
   </div>
 </section>

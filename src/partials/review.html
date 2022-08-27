@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<section class="review container">
+<section class="review mycontainer">
   <div class="review__wrapper">
     <div class="review__wrapper__cap">
       <p class="review__wrapper__cap__primary">Reviews</p>
-      <p class="review__wrapper__cap__secondary">
+      <p class="review__wrapper__cap__secondary review--cap--mob">
+        From visitors <br />
+        ”OF ALFAGLAMPING”
+      </p>
+      <p class="review__wrapper__cap__secondary review--cap--desk">
         Visitors to indigo <br />
         say about
       </p>
+      <div class="review__wrapper__cap__navigation">
+        <div class="navigation__toggle">
+          <svg
+            width="10"
+            height="16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.67416 0.329644C9.11369 0.76917 9.11369 1.48178 8.67416 1.92131L2.71714 7.87833L8.67416 13.8354C9.11369 14.2749 9.11369 14.9875 8.67416 15.427C8.23464 15.8665 7.52202 15.8665 7.0825 15.427L0.329644 8.67416C-0.109881 8.23464 -0.109881 7.52202 0.329644 7.0825L7.0825 0.329644C7.52202 -0.109881 8.23464 -0.109881 8.67416 0.329644Z"
+              fill="#0A2936"
+            />
+          </svg>
+          <svg
+            class="navigation--vector-right"
+            width="10"
+            height="16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.32574 0.329644C1.76526 -0.109881 2.47788 -0.109881 2.9174 0.329644L9.67025 7.0825C10.1098 7.52202 10.1098 8.23464 9.67025 8.67416L2.9174 15.427C2.47788 15.8665 1.76526 15.8665 1.32574 15.427C0.886212 14.9875 0.886212 14.2749 1.32574 13.8354L7.28276 7.87833L1.32574 1.92131C0.886212 1.48178 0.886212 0.76917 1.32574 0.329644Z"
+              fill="#0A2936"
+            />
+          </svg>
+        </div>
+        <div class="navigation__social">@instagram_Alpfa</div>
+      </div>
     </div>
     <div class="review__people">
-      <div class="review__people__image">
-        <img
-          class="image-hero"
-          src="./assets/images/review-primary.png"
-          alt="image review"
-        />
-      </div>
       <div class="review__people__box">
         <div class="content">
           <div class="content__title">
             <div class="content__title__box">
               <span class="content__title__index">01</span>
+              <svg class="content__title__element" width="12" height="11">
+                <use
+                  href="./assets/images/symbol-defs.svg#review-element"
+                ></use>
+              </svg>
               <p class="content__title__name">Daria review</p>
             </div>
 
@@ -30,55 +64,70 @@
               purus sit amet!
             </p>
           </div>
-          <div class="content__navigation">
-            <div class="content__navigation__toggle">
-              <svg
-                width="10"
-                height="16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.67416 0.329644C9.11369 0.76917 9.11369 1.48178 8.67416 1.92131L2.71714 7.87833L8.67416 13.8354C9.11369 14.2749 9.11369 14.9875 8.67416 15.427C8.23464 15.8665 7.52202 15.8665 7.0825 15.427L0.329644 8.67416C-0.109881 8.23464 -0.109881 7.52202 0.329644 7.0825L7.0825 0.329644C7.52202 -0.109881 8.23464 -0.109881 8.67416 0.329644Z"
-                  fill="#0A2936"
-                />
-              </svg>
-              <svg
-                class="navigation--vector-right"
-                width="10"
-                height="16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1.32574 0.329644C1.76526 -0.109881 2.47788 -0.109881 2.9174 0.329644L9.67025 7.0825C10.1098 7.52202 10.1098 8.23464 9.67025 8.67416L2.9174 15.427C2.47788 15.8665 1.76526 15.8665 1.32574 15.427C0.886212 14.9875 0.886212 14.2749 1.32574 13.8354L7.28276 7.87833L1.32574 1.92131C0.886212 1.48178 0.886212 0.76917 1.32574 0.329644Z"
-                  fill="#0A2936"
-                />
-              </svg>
-            </div>
-            <div class="content__navigation__social">@instagram_Alpfa</div>
-          </div>
         </div>
         <div class="review__people__box__image">
-          <img
-            class="image--people"
-            src="./assets/images/review-people.png"
-            alt="image review people"
-          />
-          <img
-            class="image--people"
-            src="./assets/images/review-people1.png"
-            alt="image review people"
-          />
-          <img
-            class="image--people"
-            src="./assets/images/review-people2.png"
-            alt="image review people"
-          />
+          <div class="review__people__image">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/review-primary.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/review-primary.png"
+              />
+              <img
+                class="image-hero"
+                src="./assets/images/review-primary.png"
+                alt="image review"
+              />
+            </picture>
+          </div>
+          <picture class="grid2">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people.png"
+              alt="image review people"
+            />
+          </picture>
+          <picture class="grid3">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people1.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people1.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people1.png"
+              alt="image review people"
+            />
+          </picture>
+          <picture class="grid4">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people2.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people2.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people2.png"
+              alt="image review people"
+            />
+          </picture>
         </div>
       </div>
     </div>
