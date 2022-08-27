@@ -3,6 +3,12 @@
   <head>
     <!DOCTYPE html>
     <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +32,7 @@
   <body class="full_document">
     <div class="wrapper">
       <!DOCTYPE html>
-<header class="header container">
+<header class="header">
   <a href="./index.html" class="header__logo">
     <svg class="header__logo--big" alt="logo">
       <use href="./assets/images/symbol-defs.svg#logo-big"></use>
@@ -177,7 +183,7 @@
   </div>
 </header>
  <!DOCTYPE html>
-<section class="hero container">
+<section class="hero">
   <a class="hero__move" href="#picture">
     <p class="hero__move__text">GLAMPING EXPERIENCE</p>
     <svg class="hero__move__icon">
@@ -303,7 +309,7 @@
   </div>
 </section>
  <!DOCTYPE html>
-<section class="about container">
+<section class="about">
   <div class="about__wrapper">
     <h2 class="about__wrapper__transparenty">GOOD VIBES</h2>
     <div class="about__wrapper__title">
@@ -501,60 +507,119 @@
   </div>
 </section>
  <!DOCTYPE html>
-<section class="picture container" id="picture">
+<section class="picture" id="picture">
   <div class="picture__wrapper">
-    <div class="picture__wrapper__primary">
-      <div class="picture__wrapper--style">
+    <div class="picture__wrapper--style picture-grid1">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide1.png"
+        />
         <img
           class="picture__image"
-          src="./assets/images/slide.png"
+          src="./assets/images/mob/slide.png"
           alt="slide"
         />
-      </div>
+      </picture>
     </div>
-    <div class="picture__wrapper__secondary">
-      <div class="picture__wrapper--style">
+
+    <div class="picture__wrapper--style picture-grid2">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide1.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide.png"
+        />
         <img
           class="picture__image"
-          src="./assets/images/slide1.png"
+          src="./assets/images/mob/slide1.png"
           alt="slide"
         />
-      </div>
-      <div class="picture__wrapper--style">
-        <img
-          class="picture__image"
-          src="./assets/images/slide2.png"
-          alt="slide"
-        />
-      </div>
+      </picture>
     </div>
-    <div class="picture__wrapper__tertiary">
-      <div class="picture__wrapper--style">
+
+    <div class="picture__wrapper--style picture-grid3">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide3.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide5.png"
+        />
         <img
           class="picture__image"
-          src="./assets/images/slide3.png"
+          src="./assets/images/mob/slide3.png"
           alt="slide"
         />
-      </div>
-      <div class="picture__wrapper--style">
+      </picture>
+    </div>
+
+    <div class="picture__wrapper--style picture-grid4">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide4.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide4.png"
+        />
         <img
           class="picture__image"
-          src="./assets/images/slide4.png"
+          src="./assets/images/mob/slide4.png"
           alt="slide"
         />
-      </div>
-      <div class="picture__wrapper--style">
+      </picture>
+    </div>
+
+    <div class="picture__wrapper--style picture-grid5">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide5.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide2.png"
+        />
         <img
           class="picture__image"
-          src="./assets/images/slide5.png"
+          src="./assets/images/mob/slide5.png"
           alt="slide"
         />
-      </div>
+      </picture>
+    </div>
+
+    <div class="picture__wrapper--style picture-grid6">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/images/mob/slide6.png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/slide3.png"
+        />
+        <img
+          class="picture__image"
+          src="./assets/images/mob/slide6.png"
+          alt="slide"
+        />
+      </picture>
     </div>
   </div>
 </section>
  <!DOCTYPE html>
-<section class="places container">
+<section class="places">
   <div class="places__wrapper">
     <div class="places__wrapper__title">
       <h3 class="places__wrapper__title__name">
@@ -564,54 +629,187 @@
       <p class="places__wrapper__title__description">
         Beautiful Nature with comfort
       </p>
-      <button class="places__wrapper__title__btn">view All</button>
+      <button class="places__wrapper__title__btn place--btn--mob">
+        choose location
+      </button>
+      <button class="places__wrapper__title__btn place--btn--desk">
+        view All
+      </button>
+    </div>
+    <div class="places__gallery-mob">
+      <div class="container gallery-mob__overlay">
+        <h3 class="gallery-mob__overlay__title">
+          <p class="gallery-mob__overlay__count">01</p>
+          ATLIT BEACH
+        </h3>
+        <p class="gallery-mob__overlay__option">
+          6 guests • 4 adolts + 2 kids • 1 beth
+        </p>
+        <div class="gallery-mob__overlay__view-select">
+          <ul class="view-select__list row">
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="20" height="14">
+                <use href="./assets/images/symbol-defs.svg#wifi"></use>
+              </svg>
+              <p class="view-select__list__item__text">Wi-Fi</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="15">
+                <use href="./assets/images/symbol-defs.svg#parking"></use>
+              </svg>
+              <p class="view-select__list__item__text">Parking</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="13" height="18">
+                <use href="./assets/images/symbol-defs.svg#games"></use>
+              </svg>
+              <p class="view-select__list__item__text">Games</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="19">
+                <use href="./assets/images/symbol-defs.svg#ac"></use>
+              </svg>
+              <p class="view-select__list__item__text">AC</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="16" height="18">
+                <use href="./assets/images/symbol-defs.svg#eat"></use>
+              </svg>
+              <p class="view-select__list__item__text">Eat</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="17" height="18">
+                <use href="./assets/images/symbol-defs.svg#bbq"></use>
+              </svg>
+              <p class="view-select__list__item__text">BBQ</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="18" height="17">
+                <use href="./assets/images/symbol-defs.svg#hammock"></use>
+              </svg>
+              <p class="view-select__list__item__text">Hammock</p>
+            </li>
+            <li class="view-select__list__item col-3">
+              <svg class="view-select__list__item__icon" width="16" height="17">
+                <use href="./assets/images/symbol-defs.svg#coffe"></use>
+              </svg>
+              <p class="view-select__list__item__text">Coffe</p>
+            </li>
+          </ul>
+        </div>
+        <p class="gallery-mob__overlay__description">
+          Dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+          amet. Dolor sit amet...
+        </p>
+        <button class="gallery-mob__overlay__btn">view place</button>
+      </div>
+      <div class="places__wrapper__gallery">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/place.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/places.png"
+          />
+          <img
+            class="places__image"
+            src="./assets/images/mob/place.png"
+            alt="places image"
+          />
+        </picture>
+      </div>
+      <div class="places__wrapper__gallery">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/place1.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/places1.png"
+          />
+          <img
+            class="places__image"
+            src="./assets/images/mob/place1.png"
+            alt="places image"
+          />
+        </picture>
+      </div>
     </div>
     <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places.png"
-        alt="places image"
-      />
-    </div>
-    <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places1.png"
-        alt="places image"
-      />
-    </div>
-    <div class="places__wrapper__gallery">
-      <img
-        class="places__image"
-        src="./assets/images/places2.png"
-        alt="places image"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./assets/images/places2.png"
+        />
+        <img
+          class="places__image mob--hidden"
+          src="./assets/images/places2.png"
+          alt="places image"
+        />
+      </picture>
     </div>
   </div>
 </section>
  <!DOCTYPE html>
-<section class="review container">
+<section class="review mycontainer">
   <div class="review__wrapper">
     <div class="review__wrapper__cap">
       <p class="review__wrapper__cap__primary">Reviews</p>
-      <p class="review__wrapper__cap__secondary">
+      <p class="review__wrapper__cap__secondary review--cap--mob">
+        From visitors <br />
+        ”OF ALFAGLAMPING”
+      </p>
+      <p class="review__wrapper__cap__secondary review--cap--desk">
         Visitors to indigo <br />
         say about
       </p>
+      <div class="review__wrapper__cap__navigation">
+        <div class="navigation__toggle">
+          <svg
+            width="10"
+            height="16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.67416 0.329644C9.11369 0.76917 9.11369 1.48178 8.67416 1.92131L2.71714 7.87833L8.67416 13.8354C9.11369 14.2749 9.11369 14.9875 8.67416 15.427C8.23464 15.8665 7.52202 15.8665 7.0825 15.427L0.329644 8.67416C-0.109881 8.23464 -0.109881 7.52202 0.329644 7.0825L7.0825 0.329644C7.52202 -0.109881 8.23464 -0.109881 8.67416 0.329644Z"
+              fill="#0A2936"
+            />
+          </svg>
+          <svg
+            class="navigation--vector-right"
+            width="10"
+            height="16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.32574 0.329644C1.76526 -0.109881 2.47788 -0.109881 2.9174 0.329644L9.67025 7.0825C10.1098 7.52202 10.1098 8.23464 9.67025 8.67416L2.9174 15.427C2.47788 15.8665 1.76526 15.8665 1.32574 15.427C0.886212 14.9875 0.886212 14.2749 1.32574 13.8354L7.28276 7.87833L1.32574 1.92131C0.886212 1.48178 0.886212 0.76917 1.32574 0.329644Z"
+              fill="#0A2936"
+            />
+          </svg>
+        </div>
+        <div class="navigation__social">@instagram_Alpfa</div>
+      </div>
     </div>
     <div class="review__people">
-      <div class="review__people__image">
-        <img
-          class="image-hero"
-          src="./assets/images/review-primary.png"
-          alt="image review"
-        />
-      </div>
       <div class="review__people__box">
         <div class="content">
           <div class="content__title">
             <div class="content__title__box">
               <span class="content__title__index">01</span>
+              <svg class="content__title__element" width="12" height="11">
+                <use
+                  href="./assets/images/symbol-defs.svg#review-element"
+                ></use>
+              </svg>
               <p class="content__title__name">Daria review</p>
             </div>
 
@@ -621,62 +819,77 @@
               purus sit amet!
             </p>
           </div>
-          <div class="content__navigation">
-            <div class="content__navigation__toggle">
-              <svg
-                width="10"
-                height="16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M8.67416 0.329644C9.11369 0.76917 9.11369 1.48178 8.67416 1.92131L2.71714 7.87833L8.67416 13.8354C9.11369 14.2749 9.11369 14.9875 8.67416 15.427C8.23464 15.8665 7.52202 15.8665 7.0825 15.427L0.329644 8.67416C-0.109881 8.23464 -0.109881 7.52202 0.329644 7.0825L7.0825 0.329644C7.52202 -0.109881 8.23464 -0.109881 8.67416 0.329644Z"
-                  fill="#0A2936"
-                />
-              </svg>
-              <svg
-                class="navigation--vector-right"
-                width="10"
-                height="16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1.32574 0.329644C1.76526 -0.109881 2.47788 -0.109881 2.9174 0.329644L9.67025 7.0825C10.1098 7.52202 10.1098 8.23464 9.67025 8.67416L2.9174 15.427C2.47788 15.8665 1.76526 15.8665 1.32574 15.427C0.886212 14.9875 0.886212 14.2749 1.32574 13.8354L7.28276 7.87833L1.32574 1.92131C0.886212 1.48178 0.886212 0.76917 1.32574 0.329644Z"
-                  fill="#0A2936"
-                />
-              </svg>
-            </div>
-            <div class="content__navigation__social">@instagram_Alpfa</div>
-          </div>
         </div>
         <div class="review__people__box__image">
-          <img
-            class="image--people"
-            src="./assets/images/review-people.png"
-            alt="image review people"
-          />
-          <img
-            class="image--people"
-            src="./assets/images/review-people1.png"
-            alt="image review people"
-          />
-          <img
-            class="image--people"
-            src="./assets/images/review-people2.png"
-            alt="image review people"
-          />
+          <div class="review__people__image">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/review-primary.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/review-primary.png"
+              />
+              <img
+                class="image-hero"
+                src="./assets/images/review-primary.png"
+                alt="image review"
+              />
+            </picture>
+          </div>
+          <picture class="grid2">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people.png"
+              alt="image review people"
+            />
+          </picture>
+          <picture class="grid3">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people1.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people1.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people1.png"
+              alt="image review people"
+            />
+          </picture>
+          <picture class="grid4">
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/review-people2.png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/review-people2.png"
+            />
+            <img
+              class="image--people"
+              src="./assets/images/mob/review-people2.png"
+              alt="image review people"
+            />
+          </picture>
         </div>
       </div>
     </div>
   </div>
 </section>
  <!DOCTYPE html>
-<section class="feedback container">
+<section class="feedback">
   <div class="feedback__wrapper">
     <div class="feedback-swiper">
       <!-- Additional required wrapper -->
@@ -846,7 +1059,7 @@
   </div>
 </section>
  <!DOCTYPE html>
-<section class="footer container">
+<section class="footer">
   <div class="footer__wrapper">
     <div class="footer__navigation">
       <div class="footer__navigation__title">
@@ -1310,6 +1523,11 @@
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
