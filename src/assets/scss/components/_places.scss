@@ -33,6 +33,10 @@
       align-content: flex-start;
       justify-content: center;
       align-items: flex-start;
+      @media screen and (max-width: $max-mobile) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       @media screen and (min-width: $desktop) {
         width: calc(100% - 1294px);
         max-width: 426px;
@@ -194,7 +198,7 @@
   padding-bottom: 17px;
   max-width: 260px;
   width: 100%;
-
+  min-width: 260px;
   max-height: 277px;
   height: 100%;
   background: #2e2b20;
@@ -223,11 +227,34 @@
   }
   &__option {
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     font-weight: $font-weight-bold;
     font-size: 11.5556px;
     line-height: 1.211;
     letter-spacing: 0.035em;
     color: $background-body-color;
+
+    .overlay__option__item {
+      position: relative;
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          width: 4px;
+          height: 4px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin: -2px -9px 0 0;
+          border-radius: 50%;
+          background-color: $background-body-color;
+        }
+      }
+    }
   }
   &__description {
     margin-bottom: 16px;
@@ -257,7 +284,8 @@
     opacity: 0.68;
   }
 }
-.view-select__list {
+
+.gallery-mob__overlay__view-select {
   margin-bottom: 13px;
   padding-top: 10px;
   border-top: 1px solid $color-btn;
@@ -265,6 +293,8 @@
   border-radius: 2px;
   border-bottom: 1px solid $color-btn;
   text-align: center;
+}
+.view-select__list {
   &__item {
     text-align: center;
     &__icon {

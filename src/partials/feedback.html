@@ -124,7 +124,22 @@
       </div>
       <div class="feedback__contact__us">
         <div class="feedback__contact__us__wrapper">
-          <svg
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/feedback-tel.svg"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/phone.svg"
+            />
+            <img
+              class="feedback__icon"
+              src="./assets/images/mob/feedback-tel.svg"
+              alt="tel"
+            />
+          </picture>
+          <!-- <svg
             class="feedback__icon"
             width="24"
             height="24"
@@ -138,11 +153,11 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-          </svg>
+          </svg> -->
           <p class="feedback__contact__us__phone">03-5050660</p>
         </div>
         <div class="feedback__contact__us__wrapper">
-          <svg
+          <!-- <svg
             class="feedback__icon"
             width="24"
             height="24"
@@ -161,7 +176,22 @@
               d="M1.18085 5.42662C1.49757 4.97417 2.1211 4.86414 2.57355 5.18085L12.0001 11.7794L21.4266 5.18085C21.8791 4.86414 22.5026 4.97417 22.8193 5.42662C23.136 5.87907 23.026 6.5026 22.5735 6.81932L12.5735 13.8193C12.2292 14.0603 11.7709 14.0603 11.4266 13.8193L1.42662 6.81932C0.974174 6.5026 0.864139 5.87907 1.18085 5.42662Z"
               fill="#0A2936"
             />
-          </svg>
+          </svg> -->
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/feedback-email.svg"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/mail.svg"
+            />
+            <img
+              class="feedback__icon"
+              src="./assets/images/mob/feedback-email.svg"
+              alt="email"
+            />
+          </picture>
           <p class="feedback__contact__us__email">shoam.finance@gmail.com</p>
         </div>
       </div>

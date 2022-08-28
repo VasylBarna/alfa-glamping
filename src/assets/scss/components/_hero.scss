@@ -104,10 +104,10 @@
   background-size: cover;
 
   @media screen and (max-width: $max-mobile) {
-    padding-top: 14.6px;
-    padding-right: 19px;
-    padding-bottom: 35px;
-    padding-left: 20px;
+    padding-top: 4.7%;
+    padding-right: 5.7%;
+    padding-bottom: 10%;
+    padding-left: 5.8%;
   }
 
   @media screen and (min-width: $desktop) {
@@ -189,14 +189,15 @@
     }
 
     &__spinner {
-      margin-right: 11px;
       fill: currentColor;
       color: $text-color;
       transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translate(-9px, 0px);
 
       @media screen and (max-width: $max-mobile) {
-        width: 49px;
+        width: 41px;
         height: 46px;
+        transform: translate(-9px, 0px);
       }
 
       @media screen and (min-width: $desktop) {
@@ -220,9 +221,10 @@
     }
 
     &__text {
+      margin-right: -9px;
       display: flex;
       align-items: center;
-      font-size: 23.22px;
+      font-size: 23.218px;
       line-height: 1.12;
       font-weight: 500;
       letter-spacing: 0.05em;
@@ -269,6 +271,9 @@
     }
 
     &__item {
+      @media screen and (max-width: $max-mobile) {
+        margin-right: 12px;
+      }
       &__text {
         margin-bottom: 3px;
         font-weight: 500;

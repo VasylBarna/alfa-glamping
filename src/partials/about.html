@@ -6,23 +6,55 @@
       <p class="about__wrapper__title__text">IT'S ALL ABOUT THE</p>
       <p class="about__wrapper__title__sub-title">GOOD VIBES</p>
     </div>
-    <ul class="about__wrapper__title__list">
-      <li class="about__wrapper__title__list__item">
+    <ul class="about__wrapper__title__list row">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link link__current">COUPLE</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FAMILY WITH BABY</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FAMILY WITH KIDS</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FRIENDS</h3>
       </li>
     </ul>
     <div class="couple">
-      <ul class="couple__left-list">
-        <li class="couple__left-list__item item--primary">
+      <div class="couple__image">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/about-small.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/caravan-small.png"
+          />
+          <img
+            class="couple__image__small"
+            src="./assets/images/mob/about-small.png"
+            alt="image"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/about-big.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/caravan-big.png"
+          />
+          <img
+            class="couple__image__big"
+            src="./assets/images/mob/about-big.png"
+            alt="image"
+          />
+        </picture>
+      </div>
+      <ul class="couple__left-list col">
+        <li class="couple__left-list__item item--primary row">
           <svg
             class="couple__left-list__item__vector"
             width="389"
@@ -37,17 +69,26 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--caravan">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/caravan.png"
-              width="46.73"
-              height="38.08"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/caravan-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/caravan.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                src="./assets/images/caravan.png"
+                alt="image caravan"
+              />
+            </picture>
+
             <span class="couple__wrapper__text">Caravan</span>
           </div>
         </li>
-        <li class="couple__left-list__item item--secondary">
+        <li class="couple__left-list__item item--secondary row">
           <svg
             class="couple__left-list__item__vector"
             width="356"
@@ -62,20 +103,29 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--cheel">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/cheel_zone.png"
-              width="51.06"
-              height="51.06"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/cheel_zone.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+                alt="image cheel_zone"
+              />
+            </picture>
+
             <span class="couple__wrapper__text"
               >cheel <br />
               zone</span
             >
           </div>
         </li>
-        <li class="couple__left-list__item item--tertiary">
+        <li class="couple__left-list__item item--tertiary row">
           <svg
             class="couple__left-list__item__vector"
             width="320"
@@ -90,31 +140,29 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--vr">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/vr_zone.png"
-              width="49.33"
-              height="49.33"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/vr_zone.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+                alt="image vr_zone"
+              />
+            </picture>
+
             <span class="couple__wrapper__text">vr zone</span>
           </div>
         </li>
       </ul>
-      <div class="couple__image">
-        <img
-          class="couple__image__small"
-          src="./assets/images/caravan-small.png"
-          alt=""
-        />
-        <img
-          class="couple__image__big"
-          src="./assets/images/caravan-big.png"
-          alt=""
-        />
-      </div>
-      <ul class="couple__right-list">
-        <li class="couple__right-list__item item--primary-revert">
+
+      <ul class="couple__right-list col">
+        <li class="couple__right-list__item item--primary-revert row">
           <svg
             class="couple__right-list__item__vector"
             width="370"
@@ -128,18 +176,26 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--caravan">
+          <div class="couple__wrapper wrapper--caravan couple--wrapper--revert">
             <span class="couple__wrapper__text">Games</span>
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/caravan.png"
-              width="46.73"
-              height="38.08"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/caravan-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/caravan.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                src="./assets/images/caravan.png"
+                alt="image caravan"
+              />
+            </picture>
           </div>
         </li>
-        <li class="couple__right-list__item item--secondary--secondary">
+        <li class="couple__right-list__item item--secondary--secondary row">
           <svg
             class="couple__right-list__item__vector"
             width="341"
@@ -153,21 +209,29 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--cheel">
+          <div class="couple__wrapper wrapper--cheel couple--wrapper--revert">
             <span class="couple__wrapper__text"
               >all for <br />
               children</span
             >
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/cheel_zone.png"
-              width="51.06"
-              height="51.06"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/cheel_zone.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+                alt="image cheel_zone"
+              />
+            </picture>
           </div>
         </li>
-        <li class="couple__right-list__item item--tertiary">
+        <li class="couple__right-list__item item--tertiary row">
           <svg
             class="couple__right-list__item__vector"
             width="307"
@@ -181,15 +245,23 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--vr">
+          <div class="couple__wrapper wrapper--vr couple--wrapper--revert">
             <span class="couple__wrapper__text">yoga</span>
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/vr_zone.png"
-              width="49.33"
-              height="49.33"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/vr_zone.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+                alt="image vr_zone"
+              />
+            </picture>
           </div>
         </li>
       </ul>
