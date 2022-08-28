@@ -271,16 +271,30 @@
       <!-- <span class="hero-overlay__count__total">1</span> -->
       <span class="hero-overlay__count__current">01</span>
       <div class="hero-overlay__title">
-        <svg class="hero-overlay__title__spinner">
-          <use
+        <svg
+          class="hero-overlay__title__spinner"
+          width="24"
+          height="43"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16.5145 20.312C16.5527 19.9504 16.5699 19.9449 16.6364 19.5953C16.751 18.9875 16.7965 18.8546 16.207 18.6706L2.19176 14.282C1.06516 13.9297 1.10018 14.4633 0.821815 15.3758C0.445658 16.6083 0.172756 17.8908 0.0158149 19.2069C-0.086914 20.0751 0.312815 20.0907 1.15609 20.1364L15.996 20.9003C16.3598 20.9189 16.4572 20.8474 16.5145 20.312ZM17.5733 16.5395C17.7115 16.2337 17.8607 15.9373 18.019 15.6454C18.321 15.0953 18.1027 15.058 17.5988 14.6696L7.32166 6.73798C6.573 6.16378 6.35378 6.22305 5.69517 6.92199C4.74596 7.92964 4.19338 8.67219 3.47565 9.81428C2.9531 10.647 2.96586 10.8385 3.8318 11.214L16.4198 16.7012C17.0757 16.9874 17.2795 17.19 17.5733 16.5395ZM19.6255 13.3574C19.9193 13.0246 20.1313 12.8304 20.4577 12.5301C20.838 12.1807 20.9008 12.123 20.6169 11.6778L14.6242 2.21451C14.2021 1.55007 14.0257 1.32045 13.2989 1.61689C12.0499 2.12731 10.8555 2.7565 9.73216 3.48884C8.93349 4.00926 9.48116 4.24912 10.1361 4.87354L18.774 13.1509C19.1479 13.5077 19.2852 13.744 19.6255 13.3574ZM22.8992 10.7011C23.2704 10.4919 23.5224 10.3674 23.9154 10.1972C24.3901 9.99281 24.4447 9.95941 24.3265 9.44081L22.3771 0.836169C22.1697 -0.0846605 22.0942 0.074111 21.1609 0.074111C20.1367 0.0741111 19.1297 0.150424 18.1427 0.295345C17.163 0.438445 17.4123 0.967277 17.8644 1.87722L22.0087 10.2493C22.3043 10.8403 22.3398 11.0161 22.8992 10.7011ZM16.5145 23.3501C16.5527 23.7109 16.5699 23.7163 16.6364 24.0677C16.751 24.6755 16.7965 24.8075 16.207 24.9915L2.19176 29.3812C1.06516 29.7319 1.10018 29.2004 0.821815 28.2872C0.445658 27.0543 0.172756 25.7722 0.0158151 24.4561C-0.0869139 23.5882 0.312815 23.5723 1.15609 23.5259L15.996 22.7627C16.3598 22.7443 16.4572 22.8159 16.5145 23.3501ZM17.5733 27.1231C17.7115 27.4283 17.8607 27.7263 18.019 28.0167C18.321 28.5675 18.1027 28.6045 17.5988 28.9932L7.32166 36.9241C6.573 37.499 6.35379 37.4395 5.69518 36.7401C4.74596 35.7332 4.19338 34.9902 3.47565 33.8487C2.9531 33.0164 2.96586 32.8245 3.8318 32.449L16.4198 26.9613C17.0757 26.6756 17.2795 26.473 17.5733 27.1231ZM19.6255 30.3059C19.9193 30.6391 20.1313 30.8329 20.4577 31.1325C20.838 31.483 20.9008 31.5398 20.6169 31.9852L14.6242 41.4485C14.2021 42.1126 14.0257 42.3425 13.2989 42.0452C12.0499 41.5359 10.8555 40.9054 9.73216 40.1748C8.93349 39.6538 9.48116 39.4137 10.1361 38.789L18.774 30.5112C19.1479 30.1553 19.2852 29.9193 19.6255 30.3059ZM22.8992 32.9626C23.2704 33.1711 23.5224 33.2959 23.9154 33.4653C24.3901 33.6704 24.4447 33.7025 24.3265 34.222L22.3771 42.8259C22.1697 43.7475 22.0942 43.5885 21.1609 43.5885C20.1367 43.5885 19.1297 43.5124 18.1427 43.3681C17.163 43.225 17.4123 42.6953 17.8644 41.7854L22.0087 33.4138C22.3043 32.8222 22.3398 32.6471 22.8992 32.9626Z"
+            fill="#0A2936"
+          />
+        </svg>
+        <!-- <svg class="hero-overlay__title__spinner"> -->
+        <!-- <use
             class="spinner--mob"
             href="./assets/images/symbol-defs.svg#icon-spinner-mob"
-          ></use>
-          <use
+          ></use> -->
+        <!-- <use
             class="spinner--desk"
             href="./assets/images/symbol-defs.svg#icon-spinner-desk"
           ></use>
-        </svg>
+        </svg> -->
         <h1 class="hero-overlay__title__text">explore the Mediterranean sea</h1>
       </div>
       <h2 class="hero-overlay__sub-title">
@@ -316,23 +330,55 @@
       <p class="about__wrapper__title__text">IT'S ALL ABOUT THE</p>
       <p class="about__wrapper__title__sub-title">GOOD VIBES</p>
     </div>
-    <ul class="about__wrapper__title__list">
-      <li class="about__wrapper__title__list__item">
+    <ul class="about__wrapper__title__list row">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link link__current">COUPLE</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FAMILY WITH BABY</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FAMILY WITH KIDS</h3>
       </li>
-      <li class="about__wrapper__title__list__item">
+      <li class="about__wrapper__title__list__item col">
         <h3 class="item__link">FRIENDS</h3>
       </li>
     </ul>
     <div class="couple">
-      <ul class="couple__left-list">
-        <li class="couple__left-list__item item--primary">
+      <div class="couple__image">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/about-small.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/caravan-small.png"
+          />
+          <img
+            class="couple__image__small"
+            src="./assets/images/mob/about-small.png"
+            alt="image"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/images/mob/about-big.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/caravan-big.png"
+          />
+          <img
+            class="couple__image__big"
+            src="./assets/images/mob/about-big.png"
+            alt="image"
+          />
+        </picture>
+      </div>
+      <ul class="couple__left-list col">
+        <li class="couple__left-list__item item--primary row">
           <svg
             class="couple__left-list__item__vector"
             width="389"
@@ -347,17 +393,26 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--caravan">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/caravan.png"
-              width="46.73"
-              height="38.08"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/caravan-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/caravan.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                src="./assets/images/caravan.png"
+                alt="image caravan"
+              />
+            </picture>
+
             <span class="couple__wrapper__text">Caravan</span>
           </div>
         </li>
-        <li class="couple__left-list__item item--secondary">
+        <li class="couple__left-list__item item--secondary row">
           <svg
             class="couple__left-list__item__vector"
             width="356"
@@ -372,20 +427,29 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--cheel">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/cheel_zone.png"
-              width="51.06"
-              height="51.06"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/cheel_zone.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+                alt="image cheel_zone"
+              />
+            </picture>
+
             <span class="couple__wrapper__text"
               >cheel <br />
               zone</span
             >
           </div>
         </li>
-        <li class="couple__left-list__item item--tertiary">
+        <li class="couple__left-list__item item--tertiary row">
           <svg
             class="couple__left-list__item__vector"
             width="320"
@@ -400,31 +464,29 @@
             />
           </svg>
           <div class="couple__wrapper wrapper--vr">
-            <img
-              class="couple__wrapper__image"
-              src="./assets/images/vr_zone.png"
-              width="49.33"
-              height="49.33"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/vr_zone.png"
+              />
+              <img
+                class="couple__wrapper__image"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+                alt="image vr_zone"
+              />
+            </picture>
+
             <span class="couple__wrapper__text">vr zone</span>
           </div>
         </li>
       </ul>
-      <div class="couple__image">
-        <img
-          class="couple__image__small"
-          src="./assets/images/caravan-small.png"
-          alt=""
-        />
-        <img
-          class="couple__image__big"
-          src="./assets/images/caravan-big.png"
-          alt=""
-        />
-      </div>
-      <ul class="couple__right-list">
-        <li class="couple__right-list__item item--primary-revert">
+
+      <ul class="couple__right-list col">
+        <li class="couple__right-list__item item--primary-revert row">
           <svg
             class="couple__right-list__item__vector"
             width="370"
@@ -438,18 +500,26 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--caravan">
+          <div class="couple__wrapper wrapper--caravan couple--wrapper--revert">
             <span class="couple__wrapper__text">Games</span>
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/caravan.png"
-              width="46.73"
-              height="38.08"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/caravan-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/caravan.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                src="./assets/images/caravan.png"
+                alt="image caravan"
+              />
+            </picture>
           </div>
         </li>
-        <li class="couple__right-list__item item--secondary--secondary">
+        <li class="couple__right-list__item item--secondary--secondary row">
           <svg
             class="couple__right-list__item__vector"
             width="341"
@@ -463,21 +533,29 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--cheel">
+          <div class="couple__wrapper wrapper--cheel couple--wrapper--revert">
             <span class="couple__wrapper__text"
               >all for <br />
               children</span
             >
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/cheel_zone.png"
-              width="51.06"
-              height="51.06"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/cheel_zone.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                srcset="./assets/images/mob/cheel_zone-mob.png"
+                alt="image cheel_zone"
+              />
+            </picture>
           </div>
         </li>
-        <li class="couple__right-list__item item--tertiary">
+        <li class="couple__right-list__item item--tertiary row">
           <svg
             class="couple__right-list__item__vector"
             width="307"
@@ -491,15 +569,23 @@
               stroke-linecap="round"
             />
           </svg>
-          <div class="couple__wrapper wrapper--vr">
+          <div class="couple__wrapper wrapper--vr couple--wrapper--revert">
             <span class="couple__wrapper__text">yoga</span>
-            <img
-              class="couple__wrapper__image image--revert"
-              src="./assets/images/vr_zone.png"
-              width="49.33"
-              height="49.33"
-              alt="image"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/vr_zone.png"
+              />
+              <img
+                class="couple__wrapper__image image--revert"
+                srcset="./assets/images/mob/vr_zone-mob.png"
+                alt="image vr_zone"
+              />
+            </picture>
           </div>
         </li>
       </ul>
@@ -637,14 +723,19 @@
       </button>
     </div>
     <div class="places__gallery-mob">
-      <div class="container gallery-mob__overlay">
+      <div class="gallery-mob__overlay">
         <h3 class="gallery-mob__overlay__title">
           <p class="gallery-mob__overlay__count">01</p>
           ATLIT BEACH
         </h3>
-        <p class="gallery-mob__overlay__option">
+        <!-- <p class="gallery-mob__overlay__option">
           6 guests • 4 adolts + 2 kids • 1 beth
-        </p>
+        </p> -->
+        <ul class="gallery-mob__overlay__option col">
+          <li class="overlay__option__item" row-4>6 guests</li>
+          <li class="overlay__option__item" row-4>4 adolts + 2 kids</li>
+          <li class="overlay__option__item" row-4>1 beth</li>
+        </ul>
         <div class="gallery-mob__overlay__view-select">
           <ul class="view-select__list row">
             <li class="view-select__list__item col-3">
@@ -1014,7 +1105,22 @@
       </div>
       <div class="feedback__contact__us">
         <div class="feedback__contact__us__wrapper">
-          <svg
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/feedback-tel.svg"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/phone.svg"
+            />
+            <img
+              class="feedback__icon"
+              src="./assets/images/mob/feedback-tel.svg"
+              alt="tel"
+            />
+          </picture>
+          <!-- <svg
             class="feedback__icon"
             width="24"
             height="24"
@@ -1028,11 +1134,11 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-          </svg>
+          </svg> -->
           <p class="feedback__contact__us__phone">03-5050660</p>
         </div>
         <div class="feedback__contact__us__wrapper">
-          <svg
+          <!-- <svg
             class="feedback__icon"
             width="24"
             height="24"
@@ -1051,7 +1157,22 @@
               d="M1.18085 5.42662C1.49757 4.97417 2.1211 4.86414 2.57355 5.18085L12.0001 11.7794L21.4266 5.18085C21.8791 4.86414 22.5026 4.97417 22.8193 5.42662C23.136 5.87907 23.026 6.5026 22.5735 6.81932L12.5735 13.8193C12.2292 14.0603 11.7709 14.0603 11.4266 13.8193L1.42662 6.81932C0.974174 6.5026 0.864139 5.87907 1.18085 5.42662Z"
               fill="#0A2936"
             />
-          </svg>
+          </svg> -->
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/mob/feedback-email.svg"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/mail.svg"
+            />
+            <img
+              class="feedback__icon"
+              src="./assets/images/mob/feedback-email.svg"
+              alt="email"
+            />
+          </picture>
           <p class="feedback__contact__us__email">shoam.finance@gmail.com</p>
         </div>
       </div>
@@ -1065,9 +1186,13 @@
       <div class="footer__navigation__title">
         <svg class="footer__navigation__title__spinner">
           <use
+            class="spinner--mob"
+            href="./assets/images/mob/footer-icon-logo.svg"
+          ></use>
+          <!-- <use
             class="spinner--desk"
             href="./assets/images/symbol-defs.svg#icon-spinner-desk"
-          ></use>
+          ></use> -->
         </svg>
         <p class="footer__navigation__title__text">
           explore the Mediterranean sea
