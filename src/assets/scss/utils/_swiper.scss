@@ -805,6 +805,11 @@ button.swiper-pagination-bullet {
   z-index: 9;
   transform: translate(173px, 0px);
 }
+.swiper-button-prev .swiper-button-next {
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+  }
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -829,7 +834,7 @@ button.swiper-pagination-bullet {
     min-height: 293px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 1517px;
+    max-width: 1518px;
     max-height: 777px;
   }
 }
@@ -840,11 +845,8 @@ button.swiper-pagination-bullet {
   @media screen and (max-width: $max-mobile) {
   }
   @media screen and (min-width: $desktop) {
-    width: 70%;
-    left: 23%;
-    bottom: 9%;
-    text-align: center;
-    margin-left: auto;
+    padding-left: 190px;
+    bottom: 8%;
   }
 }
 
@@ -860,7 +862,7 @@ button.swiper-pagination-bullet {
     font-size: 10px;
     line-height: 1;
     &:not(:last-child) {
-      margin-right: 6px;
+      padding-right: 6px;
     }
   }
   @media screen and (min-width: $desktop) {
@@ -868,7 +870,7 @@ button.swiper-pagination-bullet {
     line-height: 2.25;
     font-size: 22px;
     &:not(:last-child) {
-      margin-right: 8%;
+      padding-right: 8%;
     }
   }
 }
@@ -889,7 +891,9 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   width: 16px;
   height: 16px;
+  margin-left: 45px;
   top: -6px;
+  // transform: translate3d(667.4px, 0px, 0px);
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
@@ -904,9 +908,8 @@ button.swiper-pagination-bullet {
     bottom: 25px;
   }
   @media screen and (min-width: $desktop) {
-    width: 70%;
-    left: 23%;
-    bottom: 7.3%;
+    margin-left: 16px;
+    bottom: 6.7%;
   }
 }
 
@@ -916,17 +919,21 @@ button.swiper-pagination-bullet {
 
 .swiper-autoheight .swiper-wrapper {
   @media screen and (max-width: $max-mobile) {
-    min-height: 293px;
+    height: 293px;
     align-items: inherit;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 777px;
   }
 }
 
 .swiper-container {
-  height: 100%;
+  width: 1520px;
+  margin-left: auto;
+  height: 777px;
   @media screen and (max-width: $max-mobile) {
-    min-height: 293px;
+    height: 293px;
   }
-  //  max-height: 778px;
 }
 
 .swiper-pagination {
@@ -935,4 +942,9 @@ button.swiper-pagination-bullet {
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+
+  .swiper-hero {
+    width: 1520px;
+    margin-left: auto;
+  }
 }

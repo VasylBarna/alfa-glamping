@@ -98,7 +98,7 @@ $(document).ready(function () {
       el: '.swiper-scrollbar',
       draggable: 'true',
       dragSize: 16,
-      // snapOnRelease: true,
+      snapOnRelease: true,
       hide: false,
     },
     mousewheel: {
@@ -141,7 +141,7 @@ $(document).ready(function () {
       pageUpDown: true,
     },
     // Автовисота
-    autoHeight: true,
+    autoHeight: false,
     // кол-во слайдов для показа
     slidesPerView: 1,
     // откл функционал слайдера при меншем кол-ве фото чем нужно

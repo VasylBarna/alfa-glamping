@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   @media screen and (max-width: $max-mobile) {
-    padding-bottom: 598px;
+    // padding-bottom: 598px;
   }
   @media screen and (min-width: $desktop) {
     padding-bottom: 4.2%;
@@ -11,13 +11,12 @@
   &__wrapper {
     // position: relative;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     @media screen and (max-width: $max-mobile) {
       width: calc(100% - 40px);
     }
     @media screen and (min-width: $desktop) {
       width: calc(100% - 90px);
+      margin-right: auto;
     }
   }
 
@@ -38,10 +37,10 @@
       padding-right: 20px;
       padding-bottom: 30px;
       padding-left: 20px;
-      // left: 50%;
+      // left: 5%;
       top: 185px;
       max-width: 320px;
-      // transform: translate(-50%, 0px);
+      transform: translate(5%, 0px);
     }
 
     @media screen and (min-width: $desktop) {
@@ -51,7 +50,7 @@
       padding-left: 60px;
       max-width: 685px;
       top: 10%;
-      right: 0;
+      right: 4.8%;
     }
 
     &__title {
@@ -240,6 +239,7 @@
       font-size: 18px;
       line-height: 1.11;
     }
+
     &__wrapper {
       display: flex;
       align-items: center;
@@ -247,10 +247,10 @@
         &:first-child {
           margin-bottom: 13px;
         }
-        @media screen and (min-width: $desktop) {
-          &:first-child {
-            margin-bottom: 18px;
-          }
+      }
+      @media screen and (min-width: $desktop) {
+        &:first-child {
+          margin-bottom: 18px;
         }
       }
 
@@ -300,9 +300,11 @@
 }
 
 .swiper-container {
-  height: auto;
+  // height: auto;
   //  max-height: 778px;
-  max-height: 840px;
+}
+.image-feedback {
+  height: 840px;
 }
 .swiper-pagination-feedback {
   width: inherit;
